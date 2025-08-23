@@ -2,7 +2,7 @@
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_key = "generation"
 	savefile_identifier = PREFERENCE_CHARACTER
-	priority = PREFERENCE_PRIORITY_DARKPACK
+	priority = PREFERENCE_PRIORITY_TABLETOP
 	relevant_inherent_trait = TRAIT_BLOOD_DRINKER
 	minimum = 7
 	maximum = 13
