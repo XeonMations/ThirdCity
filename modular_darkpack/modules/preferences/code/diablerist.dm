@@ -2,7 +2,7 @@
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_key = "diablerist"
 	savefile_identifier = PREFERENCE_CHARACTER
-	priority = PREFERENCE_PRIORITY_TABLETOP
+	priority = PREFERENCE_PRIORITY_DARKPACK
 	relevant_inherent_trait = TRAIT_BLOOD_DRINKER
 	default_value = FALSE
 
