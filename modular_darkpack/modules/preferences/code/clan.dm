@@ -4,16 +4,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	priority = PREFERENCE_PRIORITY_DARKPACK
 	main_feature_name = "Clan"
-	relevant_inherent_trait = TRAIT_DARKPACK_CLANS
+	relevant_inherent_trait = TRAIT_VTM_CLANS
 	must_have_relevant_trait = TRUE
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/vampire_clan/init_possible_values()
-	// TODO: [Lucia] implement whitelisting
+	// TODO: [Xeon] implement whitelisting
 	return assoc_to_keys(GLOB.vampire_clan_list)
 
-/datum/preference/choiced/ethereal_color/has_relevant_feature(datum/preferences/preferences)
-	// Skips checks for relevant_organ, relevant trait etc. because ethereal color is tied directly to species (atm)
+/datum/preference/choiced/vampire_clan/has_relevant_feature(datum/preferences/preferences)
+	// Skips checks for relevant_organ, relevant trait etc. because vampire clans are tied directly to species
 	return current_species_has_savekey(preferences)
 
 /datum/preference/choiced/vampire_clan/icon_for(value)

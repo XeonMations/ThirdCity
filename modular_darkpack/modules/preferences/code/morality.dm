@@ -4,7 +4,7 @@
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	priority = PREFERENCE_PRIORITY_DARKPACK
 	main_feature_name = "Morality Path"
-	relevant_inherent_trait = TRAIT_DARKPACK_MORALITY
+	relevant_inherent_trait = TRAIT_VTM_MORALITY
 	must_have_relevant_trait = TRUE
 	can_randomize = FALSE
 

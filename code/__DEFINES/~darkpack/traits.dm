@@ -61,9 +61,9 @@
 /// Instead of dying at -100 health, enters a deathcoma and properly dies at -200 health
 #define TRAIT_CAN_ENTER_TORPOR "can_enter_torpor"
 /// Uses Vampire: The Masquerade morality systems
-#define TRAIT_DARKPACK_MORALITY "vtm_morality"
+#define TRAIT_VTM_MORALITY "vtm_morality"
 /// Uses Vampire: The Masquerade Clans/Bloodlines
-#define TRAIT_DARKPACK_CLANS "vtm_clans"
+#define TRAIT_VTM_CLANS "vtm_clans"
 /// This species drinks blood
 #define TRAIT_BLOOD_DRINKER "blood_drinker"
 /// Does not biologically age, and so has a disconnected biological and chronological age
