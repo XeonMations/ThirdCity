@@ -11,7 +11,7 @@ import { LoadoutPage } from './loadout';
 import { MainPage } from './MainPage';
 import { QuirksPage } from './QuirksPage';
 import { SpeciesPage } from './SpeciesPage';
-import { StatsPage } from './Stats' // DARKPACK EDIT ADD
+import { StatsPage } from './Stats'; // DARKPACK EDIT ADD
 
 enum Page {
   Antags,

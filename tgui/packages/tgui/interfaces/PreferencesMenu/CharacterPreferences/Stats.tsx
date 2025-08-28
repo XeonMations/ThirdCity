@@ -5,14 +5,14 @@ export function StatsPage() {
     return (
         <>
         <Stack vertical fill>
-            <Stack.Item mt={15}>
+            <Stack.Item>
             <Stack fill g={1} className="PreferencesMenu__Stats">
                 <Stack.Item>
                 <Stack vertical>
                     1
                 </Stack>
                 </Stack.Item>
-                <Stack.Item mt={-5.9}>
+                <Stack.Item>
                 <Stack vertical>
                     2
                 </Stack>
