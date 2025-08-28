@@ -17,7 +17,7 @@
 	return current_species_has_savekey(preferences)
 
 /datum/preference/choiced/vampire_clan/icon_for(value)
-	return uni_icon('modular_darkpack/modules/vampire_the_masquerade/icons/vampire_clans.dmi', get_vampire_clan(value).id)
+	return uni_icon('modular_darkpack/modules/vampire_the_masquerade/icons/vampire_clans.dmi', get_vampire_clan(value).icon)
 
 /datum/preference/choiced/vampire_clan/apply_to_human(mob/living/carbon/human/target, value)
 	target.set_clan(value, TRUE)
