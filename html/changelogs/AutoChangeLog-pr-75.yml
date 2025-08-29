@@ -1,0 +1,7 @@
+author: "hex37"
+delete-after: True
+changes:
+  - rscadd: "Jumping Component"
+  - rscadd: "Jumping UI Button, for when we do the interface"
+  - refactor: "Component is added to all human mobs."
+  - rscdel: "Old Jump Code"
