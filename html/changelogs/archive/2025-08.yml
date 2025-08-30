@@ -30,3 +30,9 @@
   XeonMations:
   - rscdel: Removed Kuei-Jin from the game.
   - bugfix: Fixed the repo's readme file
+2025-08-30:
+  hex37:
+  - rscadd: Jumping Component
+  - rscadd: Jumping UI Button, for when we do the interface
+  - refactor: Component is added to all human mobs.
+  - rscdel: Old Jump Code
