@@ -1,0 +1,5 @@
+author: "FalloutFalcon, KCartridge, Major00"
+delete-after: True
+changes:
+  - refactor: "Removes old evil bubway & bacotell racks and replaces them with real tables"
+  - image: "Revamped bacotell countertop provided by Major00 otherwise known as p4yn7"
