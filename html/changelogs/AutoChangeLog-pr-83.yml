@@ -1,0 +1,5 @@
+author: "FalloutFalcon"
+delete-after: True
+changes:
+  - qol: "\"racks\" are now under TG racks meaning you can place stuff on them and climb them"
+  - qol: "you can build our racks with rack parts"
