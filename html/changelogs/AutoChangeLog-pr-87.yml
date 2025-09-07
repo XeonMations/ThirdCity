@@ -1,6 +1,0 @@
-author: "dwinters99"
-delete-after: True
-changes:
-  - spellcheck: "identificate to identify"
-  - code_imp: "artifacts.dm ticked"
-  - refactor: "A few artifacts have better functionality"
