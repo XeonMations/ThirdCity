@@ -116,20 +116,10 @@
 	blood_type = null
 
 /obj/item/reagent_containers/blood/ab_plus
-	blood_type = "AB+"
+	blood_type = BLOOD_TYPE_AB_PLUS
 
 /obj/item/reagent_containers/blood/ab_minus
-	blood_type = "AB-"
-
-/obj/item/reagent_containers/blood/elite
-	name = "\improper elite blood pack (full)"
-	amount_of_bloodpoints = 4
-	blood_type = null
-
-/obj/item/reagent_containers/blood/elite/Initialize(mapload)
-	if(mapload)
-		blood_type = random_blood_type()
-	return ..()
+	blood_type = BLOOD_TYPE_AB_MINUS
 
 /obj/item/reagent_containers/blood/vitae
 	name = "\improper vampire vitae pack (full)"
@@ -140,7 +130,7 @@
 
 /obj/item/reagent_containers/blood/random/Initialize(mapload)
 	if(mapload)
-		blood_type = random_blood_type()
+		blood_type = random_human_blood_type()
 	return ..()
 
 /obj/item/reagent_containers/blood/bweedpack
@@ -155,7 +145,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_blood_type(),
+			"blood_type" = random_human_blood_type(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -166,12 +156,12 @@
 
 /obj/item/reagent_containers/blood/cokepack/Initialize(mapload)
 	. = ..()
-	reagents.add_reagent(/datum/reagent/drug/methamphetamine/cocaine, 15)
+	reagents.add_reagent(/datum/reagent/drug/methamphetamine, 15)
 	reagents.add_reagent(/datum/reagent/blood, 185,
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_blood_type(),
+			"blood_type" = random_human_blood_type(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -188,7 +178,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_blood_type(),
+			"blood_type" = random_human_blood_type(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -204,7 +194,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_blood_type(),
+			"blood_type" = random_human_blood_type(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
