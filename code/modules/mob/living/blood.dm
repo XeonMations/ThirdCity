@@ -342,6 +342,11 @@
 	for(var/datum/quirk/quirk as anything in quirks)
 		blood_data["quirks"] += quirk.type
 
+	//DARKPACK EDIT START - Vitae
+	blood_data["donor"] = WEAKREF(src)
+	blood_data["generation"] = generation
+	//DARKPACK EDIT END
+
 	return blood_data
 
 /mob/living/proc/get_bloodtype()

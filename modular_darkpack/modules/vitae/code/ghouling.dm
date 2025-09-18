@@ -25,7 +25,8 @@
 	if(HAS_TRAIT(src, TRAIT_UNBONDABLE) || !owner)
 		to_chat(src, span_danger("<i>Precious vitae enters your mouth, an addictive drug. You feel no loyalty, though, to the source; only the substance.</i>"))
 		return TRUE
-	if(mind.enslaved_to != owner)
+	var/mob/living/master = mind.enslaved_to?.resolve()
+	if(master != owner)
 		mind.enslave_mind_to_creator(owner)
 		apply_status_effect(/datum/status_effect/blood_bond, owner)
 		to_chat(src, span_userdanger("<b>From the first sip from the first night, you shall idolize or hate from whom you've drank deep. From the second sip upon the second night, you shall  likewise hold onto their words and seek to curry their favor. Upon the third night and third drink, you are utterly theirs. Acts of defiant will are possible, but they are fleeting.</b>"))
