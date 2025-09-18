@@ -6968,6 +6968,7 @@
 #include "modular_darkpack\modules\vitae\code\ghouling.dm"
 #include "modular_darkpack\modules\vitae\code\status_effect_blood_bond.dm"
 #include "modular_darkpack\modules\vitae\code\vitae.dm"
+#include "modular_darkpack\modules\vitae\code\vitae_blood_type.dm"
 #include "modular_darkpack\modules\walls\code\wallcode.dm"
 #include "modular_darkpack\modules\weapons\code\ammostack.dm"
 #include "modular_darkpack\modules\weapons\code\guns.dm"

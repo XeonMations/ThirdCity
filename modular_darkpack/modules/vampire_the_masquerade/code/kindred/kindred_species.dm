@@ -37,7 +37,7 @@
 	coldmod = 0.25
 	heatmod = 2
 	mutanttongue = /obj/item/organ/tongue/kindred
-	exotic_bloodtype = /datum/blood_type/kindred
+	exotic_bloodtype = BLOOD_TYPE_KINDRED
 	var/datum/vampire_clan/clan
 	var/list/datum/discipline/disciplines
 	var/enlightenment
@@ -347,18 +347,3 @@
 
 /mob/living/carbon/human/species/kindred
 	race = /datum/species/human/kindred
-
-/datum/blood_type/kindred
-	name = BLOOD_TYPE_KINDRED
-	reagent_type = /datum/reagent/blood/vitae
-	color = LIGHT_COLOR_BLOOD_MAGIC
-	compatible_types = list(
-		/datum/blood_type/human/a_minus,
-		/datum/blood_type/human/a_plus,
-		/datum/blood_type/human/b_minus,
-		/datum/blood_type/human/b_plus,
-		/datum/blood_type/human/o_minus,
-		/datum/blood_type/human/o_plus,
-		/datum/blood_type/human/ab_minus,
-		/datum/blood_type/human/ab_plus,
-	)
