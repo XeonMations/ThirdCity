@@ -349,7 +349,7 @@
 	race = /datum/species/human/kindred
 
 /datum/blood_type/kindred
-	name = BLOOD_TYPE_AB_PLUS
+	name = BLOOD_TYPE_KINDRED
 	reagent_type = /datum/reagent/blood/vitae
 	color = LIGHT_COLOR_BLOOD_MAGIC
 	compatible_types = list(

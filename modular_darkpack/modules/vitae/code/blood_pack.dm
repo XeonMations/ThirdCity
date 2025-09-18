@@ -12,6 +12,7 @@
 
 /obj/item/reagent_containers/blood/update_appearance(updates)
 	. = ..()
+	update_blood_type()
 	var/percent = round((reagents.total_volume / volume) * 100)
 	switch(percent)
 		if(100)
@@ -32,10 +33,6 @@
 	if(!holder)
 		return
 	return ..()
-
-/obj/item/reagent_containers/blood/update_appearance(updates)
-	update_blood_type()
-	. = ..()
 
 /obj/item/reagent_containers/blood/proc/update_blood_type()
 	if(!reagents)
@@ -81,7 +78,7 @@
 /obj/item/reagent_containers/blood/vitae
 	name = "\improper vampire vitae pack (full)"
 	amount_of_bloodpoints = 4
-	blood_type = /datum/blood_type/kindred
+	blood_type = BLOOD_TYPE_KINDRED
 
 /obj/item/reagent_containers/blood/random
 
