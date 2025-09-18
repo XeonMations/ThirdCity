@@ -47,8 +47,6 @@
 #define LINEAR (1<<5)
 /// Used by smoke or inhaling from a source. Smoke and cigarettes.
 #define INHALE (1<<6)
-/// DARKPACK EDIT ADD - Kindred reagent exposure method!
-#define VAMPIRE (1<<7)
 
 ///Smoke machines are both touch and inhaling
 #define SMOKE_MACHINE (TOUCH | INHALE)

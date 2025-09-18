@@ -5,7 +5,7 @@
 		message_admins("[ADMIN_LOOKUPFLW(regnant)] has attempted to bloodbond [ADMIN_LOOKUPFLW(src)] (UNBONDABLE/UNBONDING).")
 		log_game("[key_name(regnant)] has attempted to bloodbond [key_name(src)] (UNBONDABLE/UNBONDING).")
 	else
-		apply_status_effect(STATUS_EFFECT_INLOVE, regnant)
+		apply_status_effect(/datum/status_effect/blood_bond, regnant)
 		regnant.visible_message("[regnant] is pouring blood into [src]'s mouth!", "You successfuly fed [src] with vitae.")
 		to_chat(src, span_warning("You feel good when you drink this <b>BLOOD</b>..."))
 		message_admins("[ADMIN_LOOKUPFLW(regnant)] has bloodbonded [ADMIN_LOOKUPFLW(src)].")
