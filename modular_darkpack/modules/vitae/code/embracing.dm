@@ -10,8 +10,6 @@
 		to_chat(chat_message_reciever, span_notice("[childe] is totally <b>DEAD</b>!"))
 		return FALSE
 
-	//if(childe.auspice?.level) //here be Abominations
-	//	attempt_abomination_embrace(childe)
 	embrace_target(childe, second_party_embrace)
 
 /mob/living/carbon/human/proc/embrace_target(mob/living/carbon/human/childe, second_party_embrace)

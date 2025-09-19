@@ -13,28 +13,30 @@
 	var/mob/living/carbon/human/victim = exposed_mob
 	var/datum/weakref/embracer_weakref = data["donor"]
 	var/mob/living/carbon/human/embracer = embracer_weakref.resolve()
-	if(ishumanbasic(victim)) //Are we a human species?
-		if(victim.stat == DEAD) //If the human we are being added to is dead, embrace them.
+
+	//if(isgarou(victim)) //Are we a garou species? DARKPACK TODO: GAROU
+	//	attempt_abomination_embrace(childe)
+	//	victim.rollfrenzy()
+	//	return
+
+	if(ishumanbasic(victim) || isghoul(victim))
+		if(victim.stat == DEAD)
 			if(!embracer)
 				return
 			embracer.attempt_embrace_target(victim, (usr == embracer) ? null : usr)
 			return
-		else //Otherwise, ghoul them, since they aren't dead.
+		else if (isghoul(victim) && victim.stat != DEAD)
+			victim.send_ghoul_vitae_consumption_message(embracer)
+		else
 			victim.ghoulificate(embracer)
 			//victim.prompt_permenant_ghouling()
 			return
-	if(isghoul(victim)) //Are we a ghoul  species?
-		if(victim.stat == DEAD) //If the ghoul we are being added to is dead, embrace them.
-			if(!embracer)
-				return
-			embracer.attempt_embrace_target(exposed_mob, (usr == embracer) ? null : usr)
-			return
-		else
-			victim.bloodpool = min(victim.maxbloodpool, victim.bloodpool + (reac_volume / 50)) //Otherwise, they just consume vitae normally.
-			victim.send_ghoul_vitae_consumption_message(embracer)
+
 	if(iskindred(victim)) //Are we a kindred species?
-		victim.bloodpool = min(victim.maxbloodpool, victim.bloodpool + (reac_volume / 50))
 		if(embracer)
 			victim.blood_bond(embracer)
-	//if(isgarou(victim)) //Are we a garou species? DARKPACK TODO: GAROU
-	//	victim.rollfrenzy()
+
+
+/datum/reagent/blood/vitae/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+	if(isghoul(affected_mob) || iskindred(affected_mob))
+		victim.bloodpool = min(victim.maxbloodpool, victim.bloodpool + (100 / seconds_per_tick))
