@@ -80,12 +80,6 @@
 	amount_of_bloodpoints = 4
 	blood_type = BLOOD_TYPE_KINDRED
 
-/obj/item/reagent_containers/blood/random
-
-/obj/item/reagent_containers/blood/random/Initialize(mapload)
-	blood_type = random_human_blood_type()
-	return ..()
-
 /////////////////////////////////////////////////////////////////
 
 /obj/item/reagent_containers/blood/bweedpack
@@ -100,7 +94,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_human_blood_type(),
+			"blood_type" = randomm_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -116,7 +110,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_human_blood_type(),
+			"blood_type" = randomm_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -133,7 +127,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_human_blood_type(),
+			"blood_type" = randomm_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -149,7 +143,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = random_human_blood_type(),
+			"blood_type" = randomm_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
