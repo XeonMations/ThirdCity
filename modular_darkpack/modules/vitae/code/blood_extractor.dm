@@ -1,4 +1,4 @@
-/obj/structure/bloodextractor
+/obj/structure/blood_extractor
 	name = "blood extractor"
 	desc = "Extract blood in packs."
 	icon = 'modular_darkpack/modules/vitae/icons/blood_extractor.dmi'
@@ -9,7 +9,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
 	COOLDOWN_DECLARE(last_extracted)
 
-/obj/structure/bloodextractor/mouse_drop_receive(mob/living/target, mob/user, params)
+/obj/structure/blood_extractor/mouse_drop_receive(mob/living/target, mob/user, params)
 	. = ..()
 	if(user.stat != CONSCIOUS || HAS_TRAIT(user, TRAIT_UI_BLOCKED) || !Adjacent(user) || !target.Adjacent(user) || !ishuman(target))
 		return
@@ -41,7 +41,7 @@
 	generate_blood_pack(target, bloodpack)
 	target.bloodpool = max(0, target.bloodpool - 2)
 
-/obj/structure/bloodextractor/proc/generate_blood_pack(mob/living/target, obj/item/reagent_containers/blood/blood_pack)
+/obj/structure/blood_extractor/proc/generate_blood_pack(mob/living/target, obj/item/reagent_containers/blood/blood_pack)
 	var/list/blood_data = target.get_blood_data()
 	blood_pack.reagents.add_reagent(blood_data["blood_type"], 200, blood_data)
 	blood_pack.update_appearance()
