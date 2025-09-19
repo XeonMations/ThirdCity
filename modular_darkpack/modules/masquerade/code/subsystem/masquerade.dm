@@ -1,6 +1,5 @@
 SUBSYSTEM_DEF(masquerade)
 	name = "Masquerade"
-	init_order = INIT_ORDER_DEFAULT
 	flags = SS_NO_FIRE
 
 	var/masquerade_level = MASQUERADE_MAX_LEVEL
@@ -17,7 +16,7 @@ SUBSYSTEM_DEF(masquerade)
 		masquerade_filter += REGEX_QUOTE(line)
 	masquerade_breaching_phrase_regex = masquerade_filter.len ? regex("\\b([jointext(masquerade_filter, "|")])\\b", "i") : null
 	RegisterSignal(src, COMSIG_PLAYER_MASQUERADE_REINFORCE, PROC_REF(player_masquerade_reinforce))
-	..()
+	return SS_INIT_SUCCESS
 
 // Used for the status menu's masquerade breach text.
 /datum/controller/subsystem/masquerade/proc/get_description()
@@ -70,9 +69,10 @@ SUBSYSTEM_DEF(masquerade)
 				. = TRUE
 				break
 	if(player_breacher.masquerade_score == 5) //Doesn't matter if they weren't in one of these lists.
-		GLOB.veil_breakers_list -= player_breacher
+		//GLOB.veil_breakers_list -= player_breacher
 		GLOB.masquerade_breakers_list -= player_breacher
 
+	/* DARKPACK TODO: GAROU
 	if(isgarou(player_breacher) || iswerewolf(player_breacher))
 		var/random_renown = pick("Honor","Wisdom","Glory")
 		switch(random_renown)
@@ -82,7 +82,8 @@ SUBSYSTEM_DEF(masquerade)
 				player_breacher.adjust_renown("glory", -1, vessel = player_breacher)
 			if("Wisdom")
 				player_breacher.adjust_renown("wisdom", -1, vessel = player_breacher)
-	save_persistent_masquerade(player_breacher)
+	*/
+	//save_persistent_masquerade(player_breacher)
 	return .
 
 /*
@@ -100,14 +101,14 @@ SUBSYSTEM_DEF(masquerade)
 		return
 	player_breacher.masquerade_score = max(0, player_breacher.masquerade_score - 1)
 	masquerade_breachers += list(list(player_breacher, source, reason))
-	if(isgarou(player_breacher) || iswerewolf(player_breacher))
-		GLOB.veil_breakers_list |= player_breacher
-	else
-		GLOB.masquerade_breakers_list |= player_breacher
+	//if(isgarou(player_breacher) || iswerewolf(player_breacher))
+	//	GLOB.veil_breakers_list |= player_breacher
+	//else
+	GLOB.masquerade_breakers_list |= player_breacher
 	//Only lower the global masq if the player's breach score is actually reduced by 1
 	if(pre_breach_score > player_breacher.masquerade_score)
 		masquerade_level = max(0, masquerade_level - 1)
-	save_persistent_masquerade(player_breacher)
+	//save_persistent_masquerade(player_breacher)
 	check_roundend_condition()
 
 // Used for adding logging messages to every logging_machine in GLOB.loggin_machines
@@ -116,11 +117,13 @@ SUBSYSTEM_DEF(masquerade)
 		logging_machine.saved_logs += list(list(message, phone_source))
 
 // Save the player's masquerade level to their character sheet.
+/* DARKPACK TODO: PREFERENCES
 /datum/controller/subsystem/masquerade/proc/save_persistent_masquerade(mob/living/player_breacher)
 	var/datum/preferences/preferences = GLOB.preferences_datums[ckey(player_breacher.key)]
 	if(preferences)
 		preferences.masquerade_score = player_breacher.masquerade_score
 		preferences.save_character()
+*/
 
 // This is for clearing the round's masquerade because a player matrix'd
 /datum/controller/subsystem/masquerade/proc/cryo_masquerade_breacher(mob/living/player_breacher, update_preferences)
@@ -128,25 +131,25 @@ SUBSYSTEM_DEF(masquerade)
 		if((player_breacher in masquerade_breach))
 			masquerade_breachers -= list(masquerade_breach)
 			masquerade_level = min(MASQUERADE_MAX_LEVEL, masquerade_level + 1)
-	if(isgarou(player_breacher) || iswerewolf(player_breacher))
-		GLOB.veil_breakers_list -= player_breacher
-	else
-		GLOB.masquerade_breakers_list -= player_breacher
-	if(update_preferences)
-		save_persistent_masquerade(player_breacher)
+	//if(isgarou(player_breacher) || iswerewolf(player_breacher))
+	//	GLOB.veil_breakers_list -= player_breacher
+	//else
+	GLOB.masquerade_breakers_list -= player_breacher
+	//if(update_preferences)
+		//save_persistent_masquerade(player_breacher)
 
 // This is for checking if a joined player should be on the breachers list.
 /datum/controller/subsystem/masquerade/proc/masquerade_breacher_check(mob/living/player_breacher)
 	if(player_breacher.masquerade_score < 5)
-		if(isgarou(player_breacher) || iswerewolf(player_breacher))
-			GLOB.veil_breakers_list |= player_breacher
-		else
-			GLOB.masquerade_breakers_list |= player_breacher
+		//if(isgarou(player_breacher) || iswerewolf(player_breacher))
+		//	GLOB.veil_breakers_list |= player_breacher
+		//else
+		GLOB.masquerade_breakers_list |= player_breacher
 	else
-		if(isgarou(player_breacher) || iswerewolf(player_breacher))
-			GLOB.veil_breakers_list -= player_breacher
-		else
-			GLOB.masquerade_breakers_list -= player_breacher
+		//if(isgarou(player_breacher) || iswerewolf(player_breacher))
+		//	GLOB.veil_breakers_list -= player_breacher
+		//else
+		GLOB.masquerade_breakers_list -= player_breacher
 
 /datum/controller/subsystem/masquerade/proc/player_masquerade_reinforce(datum/source, mob/living/player_breacher)
 	SIGNAL_HANDLER

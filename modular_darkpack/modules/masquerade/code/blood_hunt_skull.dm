@@ -1,12 +1,16 @@
 /obj/item/blood_hunt
 	name = "ominous skull"
 	desc = "A stylized skull, made out of marble."
-	icon = 'code/modules/wod13/items.dmi'
-	icon_state = "eye"
+	icon = 'modular_darkpack/modules/masquerade/icons/blood_hunt_skull.dmi'
+	icon_state = "skull"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/blood_hunt_skull
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/datum/armor/blood_hunt_skull
+	fire = 100
+	acid = 100
 
 /obj/item/blood_hunt/Initialize(mapload)
 	. = ..()

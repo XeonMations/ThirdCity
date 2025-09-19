@@ -63,7 +63,7 @@
 	var/maxbloodpool = 5
 	var/generation = 13
 	var/humanity = 7
-	var/masquerade = 5
+	var/masquerade_score = 5
 	COOLDOWN_DECLARE(masquerade_violation_cooldown)
 	var/last_nonraid = 0
 	var/warrant = FALSE
