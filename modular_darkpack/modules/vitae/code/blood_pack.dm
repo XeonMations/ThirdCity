@@ -83,10 +83,8 @@
 /obj/item/reagent_containers/blood/random
 
 /obj/item/reagent_containers/blood/random/Initialize(mapload)
-	if(mapload)
-		blood_type = random_human_blood_type()
+	blood_type = random_human_blood_type()
 	return ..()
-
 
 /////////////////////////////////////////////////////////////////
 
