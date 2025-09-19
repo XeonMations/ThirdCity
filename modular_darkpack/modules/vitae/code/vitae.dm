@@ -1,5 +1,5 @@
 /datum/reagent/blood/vitae
-	name = "Glowing Blood"
+	name = "Glowing blood"
 	description = "It seems to be slightly glowing blood."
 	color = "#fc0000"
 	self_consuming = TRUE
