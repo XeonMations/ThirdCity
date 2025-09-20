@@ -50,7 +50,7 @@
 
 /obj/item/blood_hunt/proc/start_hunt(mob/user, mob/target, reason)
 	to_chat(user, span_warning("You add [target] to the Hunted list."))
-	RegisterSignals(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED), TYPE_PROC_REF(/mob, clear_blood_hunt_signal))
+	RegisterSignals(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED), PROC_REF(complete_hunt))
 	log_game("[user] started a bloodhunt on [target] for: [reason]")
 	message_admins("[ADMIN_LOOKUPFLW(user)]] started a bloodhunt on [target] for: [reason]")
 	target.start_blood_hunt(reason)
@@ -60,6 +60,12 @@
 	UnregisterSignal(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED))
 	log_game("[user] ended a bloodhunt on [target].")
 	message_admins("[ADMIN_LOOKUPFLW(user)]] ended a bloodhunt on [target].")
+	target.clear_blood_hunt()
+
+/obj/item/blood_hunt/proc/complete_hunt(mob/target)
+	SIGNAL_HANDLER
+
+	UnregisterSignal(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED))
 	target.clear_blood_hunt()
 
 // This code is for reinforcing a player's masquerade.
