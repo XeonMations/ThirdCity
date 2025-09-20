@@ -50,7 +50,7 @@
 
 /obj/item/blood_hunt/proc/start_hunt(mob/user, mob/target, reason)
 	to_chat(user, span_warning("You add [target] to the Hunted list."))
-	RegisterSignals(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED), TYPE_PROC_REF(/mob, clear_blood_hunt))
+	RegisterSignals(target, list(COMSIG_LIVING_DEATH, COMSIG_QDELETING, COMSIG_LIVING_GIBBED), TYPE_PROC_REF(/mob, clear_blood_hunt_signal))
 	log_game("[user] started a bloodhunt on [target] for: [reason]")
 	message_admins("[ADMIN_LOOKUPFLW(user)]] started a bloodhunt on [target] for: [reason]")
 	target.start_blood_hunt(reason)
