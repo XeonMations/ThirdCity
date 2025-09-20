@@ -41,7 +41,7 @@ SUBSYSTEM_DEF(bloodhunt)
 	if(selected_target >= length(SSbloodhunt.hunted))
 		selected_target = 1
 	blood_target = SSbloodhunt.hunted?[selected_target]
-	to_chat(span_info("You are now tracking [blood_target] at [get_area_name(blood_target)]."))
+	to_chat(owner, span_info("You are now tracking [blood_target] at [get_area_name(blood_target)]."))
 
 /atom/movable/screen/alert/bloodhunt/process(seconds_per_tick)
 	if(!owner.mind)

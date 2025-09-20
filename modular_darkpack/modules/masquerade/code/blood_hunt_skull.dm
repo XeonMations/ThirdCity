@@ -42,10 +42,10 @@
 		if(player_mob.real_name == chosen_name)
 			if(HAS_TRAIT(player_mob, TRAIT_HUNTED))
 				end_hunt(user, player_mob)
-				break
+				return
 			else
 				start_hunt(user, player_mob, reason)
-				break
+				return
 	to_chat(user, span_danger("There is no such name in the city!"))
 
 /obj/item/blood_hunt/proc/start_hunt(mob/user, mob/target, reason)
