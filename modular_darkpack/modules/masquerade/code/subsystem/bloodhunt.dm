@@ -36,9 +36,10 @@ SUBSYSTEM_DEF(bloodhunt)
 	return ..()
 
 /atom/movable/screen/alert/bloodhunt/Click()
-	. = ..()
+	if(!..())
+		return
 	selected_target += 1
-	if(selected_target >= length(SSbloodhunt.hunted))
+	if(selected_target > length(SSbloodhunt.hunted))
 		selected_target = 1
 	blood_target = SSbloodhunt.hunted?[selected_target]
 	to_chat(owner, span_info("You are now tracking [blood_target] at [get_area_name(blood_target)]."))
