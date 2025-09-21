@@ -131,7 +131,7 @@
 		var/datum/action/beastmaster_deaggro/deaggro = new()
 		deaggro.Grant(owner)
 
-	var/mob/living/simple_animal/hostile/beastmaster/rat/flying/bat = new(get_turf(owner))
+	var/mob/living/basic/bat/vampire/bat = new(get_turf(owner))
 	bat.my_creator = owner
 	owner.beastmaster |= bat
 	bat.beastmaster = owner
