@@ -21,6 +21,10 @@
 	faction = list("Tremere")
 	ai_controller = /datum/ai_controller/basic_controller/blood_guard
 
+/mob/living/basic/blood_guard/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/ai_retaliate)
+
 ///nothing unique, just retaliation.
 /datum/ai_controller/basic_controller/blood_guard
 	blackboard = list(

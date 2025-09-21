@@ -24,6 +24,10 @@
 
 	ai_controller = /datum/ai_controller/basic_controller/shadow_guard
 
+/mob/living/basic/shadow_guard/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/ai_retaliate)
+
 ///nothing unique, just retaliation.
 /datum/ai_controller/basic_controller/shadow_guard
 	blackboard = list(
