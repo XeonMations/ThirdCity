@@ -13,10 +13,10 @@
 /obj/machinery/logging_machine/Initialize()
 	. = ..()
 	saved_logs = new()
-	clearing_sound = new(list(src))
+	clearing_sound = new(src,  FALSE)
 	GLOB.logging_machines += src
 
-/obj/machinery/logging_machine/Destroy()
+/obj/machinery/logging_machine/Destroy(force)
 	GLOB.logging_machines -= src
 	QDEL_NULL(clearing_sound)
 	saved_logs = null
