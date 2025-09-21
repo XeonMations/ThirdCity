@@ -6837,6 +6837,7 @@
 #include "modular_darkpack\modules\matrix\code\job.dm"
 #include "modular_darkpack\modules\matrix\code\matrix.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\rat.dm"
+#include "modular_darkpack\modules\npc\code\nonhuman\hostile\baali_guard.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\bear.dm"
 #include "modular_darkpack\modules\npcs_human\code\__npc.dm"
 #include "modular_darkpack\modules\npcs_human\code\npc_aggression.dm"
