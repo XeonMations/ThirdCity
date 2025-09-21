@@ -1,14 +1,15 @@
-/mob/living/simple_animal/hostile/baali_guard
+/mob/living/basic/baali_guard
 	name = "Infernal Creature"
 	desc = "The peak of abominations armor. Unbelievably undamagable..."
 	icon = 'modular_darkpack/modules/deprecated/icons/32x48.dmi'
 	icon_state = "baali"
 	icon_living = "baali"
-	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	speak_chance = 0
+
 	speed = 0
+	max_stamina = 1500
 	maxHealth = 1500
 	health = 1500
+
 	butcher_results = list(/obj/item/stack/human_flesh = 20)
 	harm_intent_damage = 40
 	melee_damage_lower = 40
@@ -23,11 +24,11 @@
 	maxbloodpool = 10
 	faction = list("Baali")
 
-/mob/living/simple_animal/hostile/baali_guard/Initialize(mapload)
+/mob/living/basic/baali_guard/Initialize(mapload)
 	. = ..()
 	give_player()
 
-/mob/living/simple_animal/hostile/baali_guard/proc/give_player()
+/mob/living/basic/baali_guard/proc/give_player()
 	set waitfor = FALSE
 	var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you want to play as Infernal Creature?", null, null, null, 50, src)
 	for(var/mob/dead/observer/G in GLOB.player_list)

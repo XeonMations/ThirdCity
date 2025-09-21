@@ -144,7 +144,7 @@
 	cooldown_min = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
-	shapeshift_type = /mob/living/simple_animal/pet/rat
+	shapeshift_type = /mob/living/basic/mouse/rat/vampire
 
 /datum/discipline_power/animalism/rat_shapeshift
 	name = "Skitter"

@@ -6,7 +6,7 @@ Module ID: NPC
 
 ### Description:
 
-This module handles everything related to humanoid non-player characters using TG's new AI systems.
+This module handles everything related to darkpack non-player characters using TG's new AI systems.
 
 ### TG Proc/File Changes:
 
@@ -18,7 +18,7 @@ This module handles everything related to humanoid non-player characters using T
 
 ### Defines:
 
-- N/A
+- `code/_DEFINES/~darkpack/npc.dm`
 
 ### Included files that are not contained in this module:
 
