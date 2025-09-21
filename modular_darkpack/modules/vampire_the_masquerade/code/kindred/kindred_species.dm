@@ -45,7 +45,8 @@
 /datum/species/human/kindred/on_species_gain(mob/living/carbon/human/new_kindred, datum/species/old_species, pref_load, regenerate_icons = TRUE)
 	. = ..()
 
-	GLOB.kindred_list |= new_kindred
+	if(!pref_load)
+		GLOB.kindred_list |= new_kindred
 
 	var/datum/action/cooldown/blood_power/bloodpower = new()
 	bloodpower.Grant(new_kindred)
@@ -89,7 +90,8 @@
 /datum/species/human/kindred/on_species_loss(mob/living/carbon/human/human, datum/species/new_species, pref_load)
 	. = ..()
 
-	GLOB.kindred_list -= human
+	if(!pref_load)
+		GLOB.kindred_list -= human
 
 	human.set_clan()
 
