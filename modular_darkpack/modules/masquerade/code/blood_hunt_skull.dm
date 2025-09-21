@@ -19,7 +19,6 @@
 
 /obj/item/blood_hunt/Destroy(force)
 	GLOB.blood_hunt_announcers -= src
-	qdel(GetComponent(/datum/component/violation_observer))
 	return ..()
 
 /obj/item/blood_hunt/examine(mob/user)
