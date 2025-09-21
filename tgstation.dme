@@ -6876,6 +6876,7 @@
 #include "modular_darkpack\modules\npc\code\human\socialroles\shop\illegal.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\beastmaster\bat.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\beastmaster\blood_guard.dm"
+#include "modular_darkpack\modules\npc\code\nonhuman\beastmaster\shadow_guard.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\friendly\rat.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\baali_guard.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\bear.dm"

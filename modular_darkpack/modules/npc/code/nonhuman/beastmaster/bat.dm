@@ -9,6 +9,7 @@
 	icon_living = "bat"
 	icon_dead = "bat_dead"
 	icon_gib = "bat_dead"
+	attack_sound = 'modular_darkpack/modules/npc/sound/rat.ogg'
 
 	maxHealth = 10
 	health = 10
