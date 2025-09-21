@@ -34,3 +34,5 @@
 	pressure_resistance = 200
 	bloodpool = 1
 	maxbloodpool = 1
+
+	basic_mob_flags = DEL_ON_DEATH

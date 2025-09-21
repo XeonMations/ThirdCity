@@ -2,6 +2,8 @@
 	name = "bat"
 	desc = "It's a bat."
 
+	basic_mob_flags = DEL_ON_DEATH
+
 	icon = 'modular_darkpack/modules/npc/icons/bat.dmi'
 	icon_state = "bat"
 	icon_living = "bat"

@@ -5,7 +5,7 @@
 	icon_state = "blood_guardian"
 	icon_living = "blood_guardian"
 
-	simple_mob_flags = DEL_ON_DEATH
+	basic_mob_flags = DEL_ON_DEATH
 
 	speed = 0
 	maxHealth = 150
