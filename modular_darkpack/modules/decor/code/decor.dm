@@ -749,7 +749,7 @@
 	icon = 'modular_darkpack/modules/deprecated/icons/64x64.dmi'
 	icon_state = "kopatich"
 
-/obj/effect/rune/baalirune
+/obj/effect/decal/baalirune
 	name = "satanic rune"
 	pixel_w = -16
 	pixel_z = -16

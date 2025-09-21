@@ -1,7 +1,7 @@
 /mob/living/basic/bear/vampire
 	name = "bear"
 	desc = "IS THAT A FUCKING BEAR-"
-	icon = 'modular_darkpack/modules/npcs_nonhuman/icons/bear.dmi'
+	icon = 'modular_darkpack/modules/npc/icons/bear.dmi'
 	bloodquality = BLOOD_QUALITY_LOW
 	bloodpool = 1
 	maxbloodpool = 1

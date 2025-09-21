@@ -12,16 +12,14 @@
 
 	guaranteed_butcher_results = list(/obj/item/stack/human_flesh = 20)
 
+	combat_mode = TRUE
 	melee_damage_type = AGGRAVATED
-	harm_intent_damage = 20
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
 	attack_sound = 'sound/items/weapons/slash.ogg'
-
-	combat_mode = TRUE
 
 	bloodpool = 10
 	maxbloodpool = 10
@@ -32,7 +30,7 @@
 	. = ..()
 	AddComponent(\
 		/datum/component/ghost_direct_control,\
-		poll_candidates = poll_ghosts,\
+		poll_candidates = TRUE,\
 		role_name = "a Baali Demon",\
 		poll_ignore_key = POLL_IGNORE_BAALI_GUARD,\
 		assumed_control_message = "You are a demon from hell! Wreak havoc to all!",\

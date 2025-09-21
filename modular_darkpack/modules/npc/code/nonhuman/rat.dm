@@ -1,5 +1,5 @@
 /mob/living/basic/mouse/rat/vampire
-	icon = 'modular_darkpack/modules/npcs_nonhuman/icons/rat.dmi'
+	icon = 'modular_darkpack/modules/npc/icons/rat.dmi'
 	icon_state = "rat"
 	icon_living = "rat"
 	icon_dead = "rat_dead"
