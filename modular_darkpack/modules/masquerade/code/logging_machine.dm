@@ -20,7 +20,7 @@
 	GLOB.logging_machines -= src
 	QDEL_NULL(clearing_sound)
 	saved_logs = null
-	..()
+	return ..()
 
 /obj/machinery/logging_machine/examine(mob/user)
 	. = ..()
