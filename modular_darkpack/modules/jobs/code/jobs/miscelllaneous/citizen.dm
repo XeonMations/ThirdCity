@@ -1,11 +1,11 @@
 
-/datum/job/vamp/citizen
+/datum/job/vampire/citizen
 	title = JOB_CITIZEN
 	description = "Obey the authorities... Or don't. You are up late tonight for one reason or another."
 	faction = FACTION_CITY
 	total_positions = -1
 	spawn_positions = -1
-	outfit = /datum/outfit/job/citizen
+	outfit = /datum/outfit/job/vampire/citizen
 	paycheck = PAYCHECK_LOWER
 
 	exp_granted_type = EXP_TYPE_CREW
@@ -27,7 +27,7 @@
 
 /datum/outfit/job/vampire/citizen
 	name = JOB_CITIZEN
-	jobtype = /datum/job/vamp/citizen
+	jobtype = /datum/job/vampire/citizen
 	//l_pocket = /obj/item/vamp/phone
 	id = /obj/item/cockclock
 
