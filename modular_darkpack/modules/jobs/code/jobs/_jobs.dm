@@ -16,7 +16,7 @@
 	///List of species that are limited to a certain amount of that species doing this job.
 	var/list/species_slots = list(SPECIES_HUMAN = -1, SPECIES_GHOUL = -1, SPECIES_KINDRED = -1)
 	///List of Clans that are allowed to do this job.
-	var/list/allowed_clans = list(VAMPIRE_CLAN_ALL)
+	var/list/allowed_clans = VAMPIRE_CLAN_ALL
 	///List of Tribes that are allowed to do this job.
 	var/list/allowed_tribes = list("Galestalkers", "Ghost Council", "Hart Wardens", "Children of Gaia", "Glass Walkers", "Bone Gnawers", "Ronin", "Black Spiral Dancers", "Get of Fenris", "Black Furies", "Silver Fangs", "Silent Striders", "Shadow Lords", "Red Talons", "Stargazers")
 	///List of Auspices that are allowed to do this job.
