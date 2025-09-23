@@ -17,7 +17,7 @@
 	exp_type_department = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_MALKAVIAN)
+	allowed_clans = list(VAMPIRE_CLAN_MALKAVIAN)
 	minimal_generation = 10
 
 	v_duty = "Offer your infinite knowledge to Prince of the City."
@@ -68,7 +68,7 @@
 	exp_type_department = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_NOSFERATU)
+	allowed_clans = list(VAMPIRE_CLAN_NOSFERATU)
 	minimal_generation = 10
 
 	v_duty = "Offer your infinite knowledge to Prince of the City."
@@ -115,7 +115,7 @@
 	exp_type_department = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_VENTRUE)
+	allowed_clans = list(VAMPIRE_CLAN_VENTRUE)
 	minimal_generation = 10
 
 	v_duty = "Offer your infinite knowledge to Prince of the City."
@@ -161,7 +161,7 @@
 	exp_type_department = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_TOREADOR)
+	allowed_clans = list(VAMPIRE_CLAN_TOREADOR)
 	minimal_generation = 10
 
 	v_duty = "Offer your infinite knowledge to Prince of the City."
@@ -209,7 +209,7 @@
 	exp_type_department = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_BRUJAH)
+	allowed_clans = list(VAMPIRE_CLAN_BRUJAH)
 	minimal_generation = 10
 
 	v_duty = "Offer your infinite knowledge to Prince of the City."

@@ -22,7 +22,7 @@
 	minimal_masquerade = 0
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_CAPPADOCIAN)
+	allowed_clans = list(VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_CAPPADOCIAN)
 
 /datum/outfit/job/giovannielder
 	name = "Capo"
@@ -68,7 +68,7 @@
 	minimal_masquerade = 0
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list(VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_CAPPADOCIAN)
+	allowed_clans = list(VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_CAPPADOCIAN)
 
 /datum/outfit/job/giovanni
 	name = "La Squadra"
