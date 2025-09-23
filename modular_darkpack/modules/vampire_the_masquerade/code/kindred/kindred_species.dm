@@ -42,6 +42,9 @@
 	var/enlightenment
 	COOLDOWN_DECLARE(torpor_timer)
 
+/mob/living/carbon/human/species/kindred
+	race = /datum/species/human/kindred
+
 /datum/species/human/kindred/on_species_gain(mob/living/carbon/human/new_kindred, datum/species/old_species, pref_load, regenerate_icons = TRUE)
 	. = ..()
 
@@ -79,6 +82,8 @@
 	// Apply bashing damage resistance
 	RegisterSignal(new_kindred, COMSIG_MOB_APPLY_DAMAGE_MODIFIERS, PROC_REF(damage_resistance))
 
+	RegisterSignal(new_kindred, COMSIG_HUMAN_ON_HANDLE_BLOOD, PROC_REF(kindred_blood))
+
 	// TODO: [Rebase] reimplement choosing disciplines
 	new_kindred.give_discipline(new /datum/discipline/celerity(5))
 	new_kindred.give_discipline(new /datum/discipline/potence(5))
@@ -93,6 +98,7 @@
 	UnregisterSignal(human, SIGNAL_ADDTRAIT(TRAIT_CRITICAL_CONDITION))
 	UnregisterSignal(human, COMSIG_MOB_VAMPIRE_SUCKED)
 	UnregisterSignal(human, COMSIG_MOB_APPLY_DAMAGE_MODIFIERS)
+	UnregisterSignal(human, COMSIG_HUMAN_ON_HANDLE_BLOOD)
 
 	// TODO: [Rebase] reimplement vampire actions
 	/*
@@ -344,5 +350,11 @@
 		else
 			return value
 
-/mob/living/carbon/human/species/kindred
-	race = /datum/species/human/kindred
+
+/datum/species/human/kindred/proc/kindred_blood(mob/living/carbon/human/kindred, seconds_per_tick, times_fired)
+	SIGNAL_HANDLER
+
+	if(kindred.stat == DEAD)
+		return HANDLE_BLOOD_HANDLED
+
+	return HANDLE_BLOOD_NO_NUTRITION_DRAIN|HANDLE_BLOOD_NO_OXYLOSS
