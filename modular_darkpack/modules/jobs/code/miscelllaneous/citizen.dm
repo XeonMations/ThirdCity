@@ -1,32 +1,32 @@
 
 /datum/job/vamp/citizen
-	title = "Citizen"
-	faction = "Vampire"
+	title = JOB_CITIZEN
+	description = "Obey the authorities... Or don't. You are up late tonight for one reason or another."
+	faction = FACTION_CITY
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "the Traditions"
-	selection_color = "#df7058"
-	access = list()			//See /datum/job/assistant/get_access()
-	minimal_access = list()	//See /datum/job/assistant/get_access()
-	outfit = /datum/outfit/job/citizen
-	antag_rep = 7
-	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
+	outfit = /datum/outfit/job/assistant
+	paycheck = PAYCHECK_LOWER
 
-	access = list(ACCESS_MAINT_TUNNELS)
-	liver_traits = list(TRAIT_GREYTIDE_METABOLISM)
+	exp_granted_type = EXP_TYPE_CREW
 
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_CITIZEN
 
-	allowed_species = list("Vampire", "Ghoul", "Human", "Werewolf", "Kuei-Jin")
+	department_for_prefs = /datum/job_department/citizen
 
+	allowed_species = list("Vampire", "Ghoul", "Human", "Werewolf", "Kuei-Jin")
 	v_duty = "Follow the traditions of the Camarilla. Obey the Prince and their authority. The city belongs to him. Aligning yourself with your clan members would be of benefit."
-	duty = "Obey the authorities... Or don't. You are up late tonight for one reason or another."
+
 	minimal_masquerade = 0
-	allowed_bloodlines = list("True Brujah", "Daughters of Cacophony", "Salubri", "Baali", "Brujah", "Tremere", "Ventrue", "Nosferatu", "Gangrel", "Toreador", "Malkavian", "Banu Haqim", "Giovanni", "Ministry", "Tzimisce", "Lasombra", "Caitiff", "Old Clan Tzimisce", "Kiasyd", "Cappadocian", "Gargoyle")
+	allowed_bloodlines = list(VAMPIRE_CLAN_TRUE_BRUJAH, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY, VAMPIRE_CLAN_SALUBRI, VAMPIRE_CLAN_BAALI, VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_GANGREL, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_FOLLOWERS_OF_SET, VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE, VAMPIRE_CLAN_KIASYD, VAMPIRE_CLAN_CAPPADOCIAN, VAMPIRE_CLAN_GARGOYLE)
+
+	job_flags = CITY_JOB_FLAGS
+	rpg_title = "Lout"
+	config_tag = "CITIZEN"
 
 /datum/outfit/job/citizen
-	name = "Citizen"
+	name = JOB_CITIZEN
 	jobtype = /datum/job/vamp/citizen
 	l_pocket = /obj/item/vamp/phone
 	id = /obj/item/cockclock

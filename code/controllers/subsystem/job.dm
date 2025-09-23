@@ -139,7 +139,7 @@ SUBSYSTEM_DEF(job)
 	name_occupations = list()
 	type_occupations = list()
 
-	var/list/all_jobs = subtypesof(/datum/job)
+	var/list/all_jobs = subtypesof(/datum/job/vamp) //DARKPACK EDIT, ORIGINAL: var/list/all_jobs = subtypesof(/datum/job)
 	if(!length(all_jobs))
 		all_occupations = list()
 		joinable_occupations = list()
