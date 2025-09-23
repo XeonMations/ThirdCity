@@ -1,5 +1,5 @@
 
-/datum/job/vamp/bruiser
+/datum/job/vampire/bruiser
 	title = "Bruiser"
 	department_head = list("Baron")
 	faction = "Vampire"
@@ -29,7 +29,7 @@
 
 /datum/outfit/job/bruiser
 	name = "Bruiser"
-	jobtype = /datum/job/vamp/bruiser
+	jobtype = /datum/job/vampire/bruiser
 
 	id = /obj/item/card/id/bruiser
 	uniform = /obj/item/clothing/under/vampire/bouncer

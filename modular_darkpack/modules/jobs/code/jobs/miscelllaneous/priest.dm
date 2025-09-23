@@ -1,5 +1,5 @@
 
-/datum/job/vamp/priest
+/datum/job/vampire/priest
 	title = "Priest"
 	department_head = list("Bishop")
 	faction = "Vampire"
@@ -27,7 +27,7 @@
 
 /datum/outfit/job/priest
 	name = "Priest"
-	jobtype = /datum/job/vamp/priest
+	jobtype = /datum/job/vampire/priest
 
 	uniform = /obj/item/clothing/under/vampire/graveyard
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
@@ -40,9 +40,9 @@
 
 /datum/outfit/job/priest/pre_equip(mob/living/carbon/human/H)
 	..()
-	add_verb(H, /datum/job/vampire/priest/verb/choose_special)
+	add_verb(H, /datum/job/vampireire/priest/verb/choose_special)
 
-/datum/job/vampire/priest/verb/choose_special()
+/datum/job/vampireire/priest/verb/choose_special()
 	set category = "Priest"
 	set name = "Choose Special"
 	set desc = "Select Priest special ability."
@@ -52,7 +52,7 @@
 		if(is_species(H, /datum/species/human))
 			if(H.client)
 				var/loadout_type = input(H, "Choose what makes you special:", "Loadout") as anything in loadouts
-				remove_verb(H, /datum/job/vampire/priest/verb/choose_special)
+				remove_verb(H, /datum/job/vampireire/priest/verb/choose_special)
 				switch(loadout_type)
 					if("Numina")
 						to_chat(H, span_alertsyndie("You have been blessed with psychic powers. They make you extraordinary among mortals, yet you still fear the horrors lurking unknown."))

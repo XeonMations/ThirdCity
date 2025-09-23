@@ -1,5 +1,5 @@
 
-/datum/job/vamp/fbi
+/datum/job/vampire/fbi
 	title = "Federal Investigator"
 	department_head = list("Federal Bureau of Investigation")
 	faction = "Vampire"
@@ -27,7 +27,7 @@
 
 /datum/outfit/job/fbi
 	name = "Federal Investigator"
-	jobtype = /datum/job/vamp/fbi
+	jobtype = /datum/job/vampire/fbi
 
 	ears = /obj/item/p25radio/police/government
 	uniform = /obj/item/clothing/under/vampire/office

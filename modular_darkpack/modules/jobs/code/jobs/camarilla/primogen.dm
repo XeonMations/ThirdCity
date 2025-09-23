@@ -1,4 +1,4 @@
-/datum/job/vamp/primogen_malkavian
+/datum/job/vampire/primogen_malkavian
 	title = "Primogen Malkavian"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -28,7 +28,7 @@
 
 /datum/outfit/job/malkav
 	name = "Primogen Malkavian"
-	jobtype = /datum/job/vamp/primogen_malkavian
+	jobtype = /datum/job/vampire/primogen_malkavian
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/primogen
@@ -49,7 +49,7 @@
 		uniform = /obj/item/clothing/under/vampire/primogen_malkavian/female
 		shoes = /obj/item/clothing/shoes/vampire/heels
 
-/datum/job/vamp/primogen_nosferatu
+/datum/job/vampire/primogen_nosferatu
 	title = "Primogen Nosferatu"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -79,7 +79,7 @@
 
 /datum/outfit/job/nosferatu
 	name = "Primogen Nosferatu"
-	jobtype = /datum/job/vamp/primogen_nosferatu
+	jobtype = /datum/job/vampire/primogen_nosferatu
 
 	id = /obj/item/card/id/primogen
 	mask = /obj/item/clothing/mask/vampire/shemagh
@@ -96,7 +96,7 @@
 	if(H.gender == FEMALE)
 		shoes = /obj/item/clothing/shoes/vampire/heels
 
-/datum/job/vamp/primogen_ventrue
+/datum/job/vampire/primogen_ventrue
 	title = "Primogen Ventrue"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -126,7 +126,7 @@
 
 /datum/outfit/job/ventrue
 	name = "Primogen Ventrue"
-	jobtype = /datum/job/vamp/primogen_ventrue
+	jobtype = /datum/job/vampire/primogen_ventrue
 
 	id = /obj/item/card/id/primogen
 	glasses = /obj/item/clothing/glasses/vampire/sun
@@ -142,7 +142,7 @@
 	if(H.gender == FEMALE)
 		shoes = /obj/item/clothing/shoes/vampire/heels
 
-/datum/job/vamp/primogen_toreador
+/datum/job/vampire/primogen_toreador
 	title = "Primogen Toreador"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -172,7 +172,7 @@
 
 /datum/outfit/job/toreador
 	name = "Primogen Toreador"
-	jobtype = /datum/job/vamp/primogen_toreador
+	jobtype = /datum/job/vampire/primogen_toreador
 
 	id = /obj/item/card/id/primogen
 	glasses = /obj/item/clothing/glasses/vampire/sun
@@ -190,7 +190,7 @@
 		shoes = /obj/item/clothing/shoes/vampire/heels/red
 
 
-/datum/job/vamp/primogen_brujah
+/datum/job/vampire/primogen_brujah
 	title = "Primogen Brujah"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -220,7 +220,7 @@
 
 /datum/outfit/job/brujah
 	name = "Primogen Brujah"
-	jobtype = /datum/job/vamp/primogen_brujah
+	jobtype = /datum/job/vampire/primogen_brujah
 
 	id = /obj/item/card/id/primogen
 	glasses = /obj/item/clothing/glasses/vampire/yellow

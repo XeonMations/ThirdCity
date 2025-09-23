@@ -1,5 +1,5 @@
 
-/datum/job/vamp/strip
+/datum/job/vampire/strip
 	title = "Stripper"
 	faction = "Vampire"
 	total_positions = 4
@@ -25,7 +25,7 @@
 
 /datum/outfit/job/strip
 	name = "Stripper"
-	jobtype = /datum/job/vamp/citizen
+	jobtype = /datum/job/vampire/citizen
 	l_pocket = /obj/item/vamp/phone
 	r_pocket = /obj/item/vamp/keys/strip
 	id = /obj/item/cockclock

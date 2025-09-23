@@ -1,5 +1,5 @@
 
-/datum/job/vamp/bogatyr
+/datum/job/vampire/bogatyr
 	title = "Bogatyr"
 	department_head = list("Voivode")
 	faction = "Vampire"
@@ -36,7 +36,7 @@
 
 /datum/outfit/job/bogatyr
 	name = "Bogatyr"
-	jobtype = /datum/job/vamp/bogatyr
+	jobtype = /datum/job/vampire/bogatyr
 	id = /obj/item/card/id/bogatyr
 	//glasses = /obj/item/clothing/glasses/vampire/yellow
 	uniform = /obj/item/clothing/under/vampire/bogatyr

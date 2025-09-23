@@ -1,4 +1,4 @@
-/datum/job/vamp/taxi
+/datum/job/vampire/taxi
 	title = "Taxi Driver"
 	department_head = list("Justicar")
 	faction = "Vampire"
@@ -24,13 +24,13 @@
 
 	allowed_bloodlines = list("Daughters of Cacaphony", VAMPIRE_CLAN_SALUBRI, VAMPIRE_CLAN_BAALI, VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_GANGREL, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_FOLLOWERS_OF_SET, VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_KIASYD, VAMPIRE_CLAN_CAPPADOCIAN)
 
-/datum/job/vamp/taxi/after_spawn(mob/living/H, mob/M, latejoin = FALSE)
+/datum/job/vampire/taxi/after_spawn(mob/living/H, mob/M, latejoin = FALSE)
 	..()
 	H.taxist = TRUE
 
 /datum/outfit/job/taxi
 	name = "Taxi Driver"
-	jobtype = /datum/job/vamp/taxi
+	jobtype = /datum/job/vampire/taxi
 
 	id = /obj/item/cockclock
 	glasses = /obj/item/clothing/glasses/vampire/sun

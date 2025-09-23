@@ -1,5 +1,5 @@
 
-/datum/job/vamp/police_officer
+/datum/job/vampire/police_officer
 	title = "Police Officer"
 	department_head = list("Police Department")
 	faction = "Vampire"
@@ -27,7 +27,7 @@
 
 /datum/outfit/job/police_officer
 	name = "Police Officer"
-	jobtype = /datum/job/vamp/police_officer
+	jobtype = /datum/job/vampire/police_officer
 
 	ears = /obj/item/p25radio/police
 	uniform = /obj/item/clothing/under/vampire/police
@@ -40,7 +40,7 @@
 	r_pocket = /obj/item/vamp/keys/police
 	backpack_contents = list(/obj/item/passport=1, /obj/item/card/credit=1, /obj/item/ammo_box/vampire/c9mm = 1, /obj/item/restraints/handcuffs = 1, /obj/item/melee/baton/vamp = 1, /obj/item/storage/medkit/darkpack/ifak = 1)
 
-/datum/job/vamp/police_sergeant
+/datum/job/vampire/police_sergeant
 	title = "Police Sergeant"
 	department_head = list("Police Department")
 	faction = "Vampire"
@@ -67,7 +67,7 @@
 
 /datum/outfit/job/police_sergeant
 	name = "Police Sergeant"
-	jobtype = /datum/job/vamp/police_sergeant
+	jobtype = /datum/job/vampire/police_sergeant
 
 	ears = /obj/item/p25radio/police/supervisor
 	uniform = /obj/item/clothing/under/vampire/police
@@ -80,7 +80,7 @@
 	r_pocket = /obj/item/vamp/keys/police/secure
 	backpack_contents = list(/obj/item/passport=1, /obj/item/card/credit=1, /obj/item/ammo_box/vampire/c9mm = 1, /obj/item/restraints/handcuffs = 1, /obj/item/melee/baton/vamp = 1, /obj/item/storage/medkit/darkpack/ifak = 1)
 
-/datum/job/vamp/police_chief
+/datum/job/vampire/police_chief
 	title = "Police Chief"
 	department_head = list("Police Department")
 	faction = "Vampire"
@@ -107,7 +107,7 @@
 
 /datum/outfit/job/police_chief
 	name = "Police Chief"
-	jobtype = /datum/job/vamp/police_chief
+	jobtype = /datum/job/vampire/police_chief
 
 	ears = /obj/item/p25radio/police/command
 	uniform = /obj/item/clothing/under/vampire/police

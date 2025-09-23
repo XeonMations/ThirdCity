@@ -4,7 +4,7 @@
  * As any other job datum, this is a singleton.
  **/
 
-/datum/job/vamp/unassigned
+/datum/job/vampire/unassigned
 	title = "Ordinary Citizen"
 	rpg_title = "Peasant"
 	paycheck = PAYCHECK_ZERO

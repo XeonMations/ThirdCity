@@ -1,4 +1,4 @@
-/datum/job/vamp/prince
+/datum/job/vampire/prince
 	title = "Prince"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list("Justicar")
@@ -42,13 +42,13 @@
 	v_duty = "You are the top dog of this city. You hold Praxis over San Francisco, and your word is law. Make sure the Masquerade is upheld, and your status is respected."
 
 
-/datum/job/vamp/prince/announce(mob/living/carbon/human/H)
+/datum/job/vampire/prince/announce(mob/living/carbon/human/H)
 	..()
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(minor_announce), "Prince [H.real_name] is in the city!"))
 
 /datum/outfit/job/prince
 	name = "Prince"
-	jobtype = /datum/job/vamp/prince
+	jobtype = /datum/job/vampire/prince
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/prince

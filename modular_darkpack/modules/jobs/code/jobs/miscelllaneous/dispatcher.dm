@@ -1,5 +1,5 @@
 
-/datum/job/vamp/dispatcher
+/datum/job/vampire/dispatcher
 	title = "Emergency Dispatcher"
 	faction = "Vampire"
 	total_positions = 2
@@ -23,7 +23,7 @@
 
 /datum/outfit/job/dispatcher
 	name = "Dispatcher"
-	jobtype = /datum/job/vamp/dispatcher
+	jobtype = /datum/job/vampire/dispatcher
 	uniform = /obj/item/clothing/under/vampire/office
 	ears = /obj/item/p25radio/police/dispatch
 	shoes = /obj/item/clothing/shoes/vampire/businessblack
