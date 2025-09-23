@@ -5,7 +5,7 @@
 	faction = FACTION_CITY
 	total_positions = -1
 	spawn_positions = -1
-	outfit = /datum/outfit/job/assistant
+	outfit = /datum/outfit/job/citizen
 	paycheck = PAYCHECK_LOWER
 
 	exp_granted_type = EXP_TYPE_CREW

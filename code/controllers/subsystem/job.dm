@@ -31,7 +31,7 @@ SUBSYSTEM_DEF(job)
 	var/list/prioritized_jobs = list()
 	var/list/latejoin_trackers = list()
 
-	var/overflow_role = /datum/job/assistant
+	var/overflow_role = /datum/job/vamp/citizen //DARKPACK EDIT, ORIGINAL: var/overflow_role = /datum/job/assistant
 
 	var/list/level_order = list(JP_HIGH, JP_MEDIUM, JP_LOW)
 
@@ -419,7 +419,7 @@ SUBSYSTEM_DEF(job)
 	job_debug("DO: Player count to assign roles to: [initial_players_to_assign]")
 
 	//Scale number of open security officer slots to population
-	setup_officer_positions()
+	//setup_officer_positions() DAKRPACK EDIT REMOVAL - JOBS
 
 	//Jobs will have fewer access permissions if the number of players exceeds the threshold defined in game_options.txt
 	var/min_access_threshold = CONFIG_GET(number/minimal_access_threshold)

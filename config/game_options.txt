@@ -223,8 +223,8 @@ MINIMAL_ACCESS_THRESHOLD 20
 ## Set to 0/commented out for "off", Departmental Security Officers will never get additional room-specific access (beyond general departmental doors).
 ## Set to 1 if you want to enable "Scaling Access", where Departmental Security Officers will get access to most rooms within a department depending on how many security officers there are relative to the number of people on a station.
 ## Set to 2 if you want Departmental Security Officers to always have access to all rooms in a department.
-DEPSEC_ACCESS_LEVEL 1
-
+DEPSEC_ACCESS_LEVEL 0
+#DARKPACK EDIT: DEPSEC_ACCESS_LEVEL SET TO 0 INSTEAD OF 1
 
 ## GHOST INTERACTION ###
 ## Uncomment to let ghosts spin chairs. You may be wondering why this is a config option. Don't ask.
@@ -412,9 +412,9 @@ MORGUE_CADAVER_OTHER_SPECIES_PROBABILITY 50
 #MORGUE_CADAVER_OVERRIDE_SPECIES lizard
 
 
-##Overflow job. Default is assistant.
+##Overflow job. Default is assistant. DARKPACK EDIT: SET TO "Citizen" FROM "Assistant"
 ## NOTE: This will overwrite anything you put in jobconfig.toml!
-OVERFLOW_JOB Assistant
+OVERFLOW_JOB Citizen
 
 ## Overflow slot cap. Set to -1 for unlimited. If limited, it will still open up if every other job is full.
 ## NOTE: This will overwrite anything you put in jobconfig.toml!
