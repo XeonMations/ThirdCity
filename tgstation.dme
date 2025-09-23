@@ -419,6 +419,7 @@
 #include "code\__DEFINES\~darkpack\branding.dm"
 #include "code\__DEFINES\~darkpack\discipline.dm"
 #include "code\__DEFINES\~darkpack\economy.dm"
+#include "code\__DEFINES\~darkpack\generations.dm"
 #include "code\__DEFINES\~darkpack\guns.dm"
 #include "code\__DEFINES\~darkpack\jobs.dm"
 #include "code\__DEFINES\~darkpack\keybinding.dm"
