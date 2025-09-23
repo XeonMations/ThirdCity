@@ -9,6 +9,21 @@
 /// Checks for character age.
 #define JOB_UNAVAILABLE_AGE 7
 
+// DARKPACK EDIT ADD START
+
+/// Checks for character species.
+#define JOB_UNAVAILABLE_SPECIES 8
+/// Checks for character bloodline.
+#define JOB_UNAVAILABLE_BLOODLINE 9
+/// Checks for character tribe.
+#define JOB_UNAVAILABLE_TRIBE 10
+/// Checks for character auspice.
+#define JOB_UNAVAILABLE_AUSPICE 11
+/// Checks for character whitelist.
+#define JOB_UNAVAILABLE_WHITELIST 12
+
+// DARKPACK EDIT ADD END
+
 /// Used when the `get_job_unavailable_error_message` proc can't make sense of a given code.
 #define GENERIC_JOB_UNAVAILABLE_ERROR "Error: Unknown job availability."
 
