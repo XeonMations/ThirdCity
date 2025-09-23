@@ -25,7 +25,7 @@
 	rpg_title = "Lout"
 	config_tag = "CITIZEN"
 
-/datum/outfit/job/citizen
+/datum/outfit/job/vampire/citizen
 	name = JOB_CITIZEN
 	jobtype = /datum/job/vamp/citizen
 	//l_pocket = /obj/item/vamp/phone

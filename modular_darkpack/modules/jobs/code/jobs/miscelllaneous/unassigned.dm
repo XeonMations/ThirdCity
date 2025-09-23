@@ -8,3 +8,12 @@
 	title = "Ordinary Citizen"
 	rpg_title = "Peasant"
 	paycheck = PAYCHECK_ZERO
+
+/datum/outfit/job/vamp
+	uniform = null
+	id = null
+	ears = null
+	belt = null
+	back = null
+	shoes = null
+	box = null
