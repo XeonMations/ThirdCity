@@ -6820,7 +6820,7 @@
 #include "modular_darkpack\modules\human_visuals\code\body_weight\body_weight.dm"
 #include "modular_darkpack\modules\human_visuals\code\body_weight\clothes_weight_sprites.dm"
 #include "modular_darkpack\modules\jobs\code\departments.dm"
-#include "modular_darkpack\modules\jobs\code\miscelllaneous\citizen.dm"
+#include "modular_darkpack\modules\jobs\code\jobs\miscelllaneous\citizen.dm"
 #include "modular_darkpack\modules\jumping\code\crack_effect.dm"
 #include "modular_darkpack\modules\jumping\code\jump_ui_button.dm"
 #include "modular_darkpack\modules\jumping\code\jumper_component.dm"
