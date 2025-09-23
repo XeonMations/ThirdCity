@@ -33,7 +33,7 @@
 			return
 
 	if(iskindred(victim)) //Are we a kindred species?
-		if(embracer)
+		if(embracer && embracer != victim)
 			victim.blood_bond(embracer)
 
 
