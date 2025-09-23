@@ -15,8 +15,6 @@
 
 #define JOB_DISPLAY_ORDER_CITIZEN 1
 
-#define DEPARTMENT_UNASSIGNED "No Department"
-
 #define DEPARTMENT_BITFLAG_CITIZEN (1<<0)
 #define DEPARTMENT_CITIZEN "Citizen"
 
@@ -27,7 +25,6 @@ DEFINE_BITFIELD(departments_bitflags, list(
 /// Combination flag for jobs which are considered regular crew members of the station.
 #define CITY_JOB_FLAGS (JOB_CREW_MANIFEST|JOB_EQUIP_RANK|JOB_CREW_MEMBER|JOB_NEW_PLAYER_JOINABLE|JOB_REOPEN_ON_ROUNDSTART_LOSS|JOB_ASSIGN_QUIRKS)
 
-#define FACTION_NONE "None"
 #define FACTION_CITY "City"
 #define FACTION_TREMERE VAMPIRE_CLAN_TREMERE
 
