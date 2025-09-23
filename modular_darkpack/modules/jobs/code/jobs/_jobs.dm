@@ -1,5 +1,5 @@
 // Default vampire base type.
-/datum/job/vampire
+/datum/job
 	///Minimum vampire Generation necessary to do this job.
 	var/minimal_generation = HIGHEST_GENERATION_LIMIT
 	///Minimum Masquerade level necessary to do this job.

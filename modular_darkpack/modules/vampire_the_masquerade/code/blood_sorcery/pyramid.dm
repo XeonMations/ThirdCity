@@ -457,7 +457,7 @@
 		message += "The blood is filled with the power of magic. The owner must be a thaumaturge."
 	else if(clan == VAMPIRE_CLAN_BAALI)
 		message += "Tainted and corrupt. Vile and filthy. You see your reflection in the blood, but something else stares back."
-	else if(clan == "Assamite")
+	else if(clan == VAMPIRE_CLAN_BANU_HAQIM)
 		message += "Potent... Deadly... And cursed. You know well the curse laid by Tremere on the assassins."
 	else if(clan == VAMPIRE_CLAN_TRUE_BRUJAH)
 		message += "The blood is cold and static... It's hard to feel any emotion within it."

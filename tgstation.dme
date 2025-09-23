@@ -6822,6 +6822,7 @@
 #include "modular_darkpack\modules\jobs\code\departments.dm"
 #include "modular_darkpack\modules\jobs\code\job_assignment.dm"
 #include "modular_darkpack\modules\jobs\code\jobs\_jobs.dm"
+#include "modular_darkpack\modules\jobs\code\jobs\job_items.dm"
 #include "modular_darkpack\modules\jobs\code\jobs\miscelllaneous\citizen.dm"
 #include "modular_darkpack\modules\jumping\code\crack_effect.dm"
 #include "modular_darkpack\modules\jumping\code\jump_ui_button.dm"
