@@ -10,10 +10,10 @@
 	paycheck = PAYCHECK_ZERO
 
 /datum/outfit/job/vampire
-	uniform = null
+	uniform = /obj/item/clothing/under/color/grey
 	id = null
 	ears = null
 	belt = null
-	back = null
-	shoes = null
+	back = /obj/item/storage/backpack
+	shoes = /obj/item/clothing/shoes/sneakers/black
 	box = null
