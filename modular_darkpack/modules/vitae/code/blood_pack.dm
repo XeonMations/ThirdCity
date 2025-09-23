@@ -8,8 +8,6 @@
 	inhand_icon_state = "blood100"
 	reagent_flags = OPENCONTAINER | REFILLABLE | DRAWABLE
 
-	var/amount_of_bloodpoints = 2
-
 /obj/item/reagent_containers/blood/Initialize(mapload, vol)
 	. = ..()
 	update_appearance()
@@ -35,24 +33,12 @@
 	. = ..()
 	if(!canconsume(M, user))
 		return
-	if(!reagents.holder_full())
-		return
 	if(!do_after(user, 3 SECONDS, M))
 		return
 	reagents.trans_to(M, reagents.total_volume, transferred_by = user, methods = EXPOSE_VAMPIRE, show_message = FALSE)
-
 	playsound(M.loc, 'sound/items/drink.ogg', 50, TRUE)
 	update_appearance()
 	//SEND_SIGNAL(M, COMSIG_MASQUERADE_VIOLATION)
-	if(ishumanbasic(M) || (isghoul(M) && !reagents.has_reagent(/datum/reagent/blood/vitae)))
-		to_chat(M, span_notice("That didn't taste very good..."))
-		M.adjust_disgust(DISGUST_LEVEL_GROSS)
-		M.add_mood_event("toxic_food", /datum/mood_event/disgusting_food)
-	if(iskindred(M) || (isghoul(M) && reagents.has_reagent(/datum/reagent/blood/vitae)))
-		M.bloodpool = min(M.maxbloodpool, M.bloodpool+amount_of_bloodpoints)
-		M.adjustBruteLoss(-20, TRUE)
-		M.adjustFireLoss(-20, TRUE)
-		M.update_blood_hud()
 
 /obj/item/reagent_containers/blood/empty
 	blood_type = null
@@ -65,7 +51,6 @@
 
 /obj/item/reagent_containers/blood/vitae
 	name = "\improper vampire vitae pack (full)"
-	amount_of_bloodpoints = 4
 	blood_type = BLOOD_TYPE_KINDRED
 
 /////////////////////////////////////////////////////////////////
