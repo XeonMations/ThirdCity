@@ -12,7 +12,7 @@
 		return
 	var/mob/living/carbon/human/victim = exposed_mob
 	var/datum/weakref/embracer_weakref = data["donor"]
-	var/mob/living/carbon/human/embracer = embracer_weakref.resolve()
+	var/mob/living/carbon/human/embracer = embracer_weakref?.resolve()
 
 	//if(isgarou(victim)) //Are we a garou species? DARKPACK TODO: GAROU
 	//	attempt_abomination_embrace(childe)
