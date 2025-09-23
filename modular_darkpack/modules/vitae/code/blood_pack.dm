@@ -10,9 +10,12 @@
 
 	var/amount_of_bloodpoints = 2
 
+/obj/item/reagent_containers/blood/Initialize(mapload, vol)
+	. = ..()
+	update_appearance()
+
 /obj/item/reagent_containers/blood/update_appearance(updates)
 	. = ..()
-	update_blood_type()
 	var/percent = round((reagents.total_volume / volume) * 100)
 	switch(percent)
 		if(100)
@@ -27,21 +30,6 @@
 			icon_state = "blood0"
 	inhand_icon_state = icon_state
 	onflooricon_state = icon_state
-
-/// Handles updating the container when the reagents change.
-/obj/item/reagent_containers/blood/on_reagent_change(datum/reagents/holder, ...)
-	if(!holder)
-		return
-	return ..()
-
-/obj/item/reagent_containers/blood/proc/update_blood_type()
-	if(!reagents)
-		return
-	var/datum/reagent/blood/B = (reagents.has_reagent(/datum/reagent/blood) || reagents.has_reagent(/datum/reagent/blood/vitae))
-	if(B && B.data && B.data["blood_type"])
-		blood_type = B.data["blood_type"]
-	else
-		blood_type = null
 
 /obj/item/reagent_containers/blood/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -68,10 +56,6 @@
 
 /obj/item/reagent_containers/blood/empty
 	blood_type = null
-
-/obj/item/reagent_containers/blood/empty/Initialize(mapload, vol)
-	. = ..()
-	update_appearance()
 
 /obj/item/reagent_containers/blood/ab_plus
 	blood_type = BLOOD_TYPE_AB_PLUS
