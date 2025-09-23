@@ -69,6 +69,10 @@
 /obj/item/reagent_containers/blood/empty
 	blood_type = null
 
+/obj/item/reagent_containers/blood/empty/Initialize(mapload, vol)
+	. = ..()
+	update_appearance()
+
 /obj/item/reagent_containers/blood/ab_plus
 	blood_type = BLOOD_TYPE_AB_PLUS
 
