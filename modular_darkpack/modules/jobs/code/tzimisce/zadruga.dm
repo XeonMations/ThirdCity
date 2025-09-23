@@ -17,7 +17,7 @@
 	exp_type_department = EXP_TYPE_TZIMISCE
 
 	//ghoul_only = TRUE
-	//allowed_bloodlines = list("Old Clan Tzimisce", "Tzimisce")
+	//allowed_bloodlines = list(VAMPIRE_CLAN_OLD_CLAN_TZIMISCE, VAMPIRE_CLAN_TZIMISCE)
 	//minimal_generation = 7	//Uncomment when players get exp enough
 
 	duty = "You were born in servitude to the Master of the Manor: your father served the Voivode, as did his father. Now, you carry their blood, and with it their responsibilities."

@@ -22,7 +22,7 @@
 	minimal_masquerade = 4
 	minimal_generation = 10
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list("Tremere")
+	allowed_bloodlines = list(VAMPIRE_CLAN_TREMERE)
 
 	known_contacts = list("Prince")
 

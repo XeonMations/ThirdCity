@@ -27,7 +27,7 @@
 	minimal_generation = 10	//Uncomment when players get exp enough
 	minimal_masquerade = 5
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list("Tremere", "Ventrue", "Nosferatu", "Toreador", "Malkavian", "Brujah", "Lasombra", "Gangrel", "True Brujah")
+	allowed_bloodlines = list(VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_GANGREL, VAMPIRE_CLAN_TRUE_BRUJAH)
 
 	my_contact_is_important = TRUE
 	known_contacts = list(

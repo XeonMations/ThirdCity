@@ -17,7 +17,7 @@
 	exp_type_department = EXP_TYPE_TZIMISCE
 
 	allowed_species = list("Vampire")
-	allowed_bloodlines = list("Old Clan Tzimisce")
+	allowed_bloodlines = list(VAMPIRE_CLAN_OLD_CLAN_TZIMISCE)
 	minimal_generation = 10
 
 	v_duty = "You are a Childe of the Voivode-in-Waiting, the ancient Tzimisce Elder who has rested beneath the Earth for an age longer than the city that now rests on their bones. Honor them in all your actions, and remember that you walk with their favor."

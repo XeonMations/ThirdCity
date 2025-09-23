@@ -21,7 +21,7 @@
 	minbodytemp = 0
 	bloodpool = 10
 	maxbloodpool = 10
-	faction = list("Baali")
+	faction = list(VAMPIRE_CLAN_BAALI)
 
 /mob/living/simple_animal/hostile/baali_guard/Initialize(mapload)
 	. = ..()
