@@ -9,7 +9,7 @@
 	rpg_title = "Peasant"
 	paycheck = PAYCHECK_ZERO
 
-/datum/outfit/job/vamp
+/datum/outfit/job/vampire
 	uniform = null
 	id = null
 	ears = null
