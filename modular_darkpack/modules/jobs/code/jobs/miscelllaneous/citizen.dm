@@ -32,7 +32,7 @@
 	id = /obj/item/cockclock
 
 /datum/outfit/job/citizen/pre_equip(mob/living/carbon/human/H)
-	..()
+	. = ..()
 	if(H.clan)
 		if(H.gender == MALE)
 			shoes = /obj/item/clothing/shoes/vampire
