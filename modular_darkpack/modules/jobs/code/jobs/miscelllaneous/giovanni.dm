@@ -1,4 +1,4 @@
-/datum/job/giovannielder
+/datum/job/vampire/giovannielder
 	title = "Capo"
 	department_head = list("Uncle Augie")
 	faction = "Vampire"
@@ -26,7 +26,7 @@
 
 /datum/outfit/job/giovannielder
 	name = "Capo"
-	jobtype = /datum/job/giovannielder
+	jobtype = /datum/job/vampire/giovannielder
 
 	id = /obj/item/cockclock
 	glasses = /obj/item/clothing/glasses/vampire/sun
@@ -46,7 +46,7 @@
 /obj/effect/landmark/start/giovannielder
 	name = "Capo"
 
-/datum/job/giovanni
+/datum/job/vampire/giovanni
 	title = "La Squadra"
 	department_head = list("Capo")
 	faction = "Vampire"
@@ -72,7 +72,7 @@
 
 /datum/outfit/job/giovanni
 	name = "La Squadra"
-	jobtype = /datum/job/giovanni
+	jobtype = /datum/job/vampire/giovanni
 
 	id = /obj/item/cockclock
 	glasses = /obj/item/clothing/glasses/vampire/sun
@@ -92,7 +92,7 @@
 /obj/effect/landmark/start/giovanni
 	name = "La Squadra"
 
-/datum/job/giovannimafia
+/datum/job/vampire/giovannimafia
 	title = "La Famiglia"
 	department_head = list("Capo")
 	faction = "Vampire"
@@ -120,7 +120,7 @@
 
 /datum/outfit/job/giovannimafia
 	name = "La Famiglia"
-	jobtype = /datum/job/giovannimafia
+	jobtype = /datum/job/vampire/giovannimafia
 	id = /obj/item/cockclock
 	glasses = /obj/item/clothing/glasses/vampire/sun
 	uniform = /obj/item/clothing/under/vampire/suit

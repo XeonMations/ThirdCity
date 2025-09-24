@@ -1,5 +1,5 @@
 
-/datum/job/hound
+/datum/job/vampire/hound
 	title = "Hound"
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list("Prince")
@@ -33,7 +33,7 @@
 
 /datum/outfit/job/hound
 	name = "Hound"
-	jobtype = /datum/job/hound
+	jobtype = /datum/job/vampire/hound
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/camarilla

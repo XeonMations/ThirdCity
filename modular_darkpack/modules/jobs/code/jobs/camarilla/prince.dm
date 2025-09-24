@@ -1,4 +1,4 @@
-/datum/job/prince
+/datum/job/vampire/prince
 	title = JOB_PRINCE
 	description = "You are the top dog of this city. You hold Praxis over San Francisco, and your word is law. Make sure the Masquerade is upheld, and your status is respected."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
@@ -44,12 +44,12 @@
 		"Voivode"
 	)
 
-/datum/job/prince/get_captaincy_announcement(mob/living/captain)
+/datum/job/vampire/prince/get_captaincy_announcement(mob/living/captain)
 	return "Prince [captain.real_name] is in the city!"
 
 /datum/outfit/job/prince
 	name = "Prince"
-	jobtype = /datum/job/prince
+	jobtype = /datum/job/vampire/prince
 
 	//ears = /obj/item/p25radio
 	id = /obj/item/card/prince

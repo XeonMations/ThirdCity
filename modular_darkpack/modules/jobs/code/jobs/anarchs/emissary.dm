@@ -1,5 +1,5 @@
 
-/datum/job/emissary
+/datum/job/vampire/emissary
 	title = "Emissary"
 	department_head = list("Baron")
 	faction = "Vampire"
@@ -29,7 +29,7 @@
 
 /datum/outfit/job/emissary
 	name = "emissary"
-	jobtype = /datum/job/emissary
+	jobtype = /datum/job/vampire/emissary
 
 	id = /obj/item/card/id/emissary
 	uniform = /obj/item/clothing/under/vampire/bouncer
