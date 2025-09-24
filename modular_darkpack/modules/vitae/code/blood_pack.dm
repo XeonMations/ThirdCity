@@ -16,13 +16,13 @@
 	. = ..()
 	var/percent = round((reagents.total_volume / volume) * 100)
 	switch(percent)
-		if(100)
+		if(76 to 100)
 			icon_state = "blood100"
-		if(75)
+		if(51 to 75)
 			icon_state = "blood75"
-		if(50)
+		if(26 to 50)
 			icon_state = "blood50"
-		if(25)
+		if(1 to 25)
 			icon_state = "blood25"
 		if(0)
 			icon_state = "blood0"
