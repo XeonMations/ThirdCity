@@ -47,3 +47,7 @@
 	title = "Ordinary Citizen"
 	rpg_title = "Peasant"
 	paycheck = PAYCHECK_ZERO
+
+/// Returns information pertaining to this job's radio.
+/datum/job/vampire/get_radio_information()
+	return
