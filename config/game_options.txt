@@ -84,12 +84,14 @@ STATION_GOAL_BUDGET 1
 ## If TRUE / 1, station is raised to blue alert at roundstart.
 ## If FALSE / 0, station remains at green alert.
 ## Roundstart command report and greendshift announcements are unaffected.
-ROUNDSTART_BLUE_ALERT 1
+ROUNDSTART_BLUE_ALERT 0
+#DARKPACK EDIT: ROUNDSTART_BLUE_ALERT SET TO 0
 
 ## GAME MODES ###
 
 ## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
-#NO_INTERCEPT_REPORT
+NO_INTERCEPT_REPORT
+#DARKPACK EDIT: CONFIG ENABLED
 
 ## Percent weight reductions for three of the most recent modes
 
@@ -200,7 +202,7 @@ CONFIG_GATEWAY_CHANCE 0
 ## This is useful for accommodating both low and high population rounds on the same server.
 ## Comment this out or set to 0 to disable this automatic toggle.
 #MINIMAL_ACCESS_THRESHOLD 20
-#DARKPACK EDIT: COMMENTED OUT BY DEFAULT
+#DARKPACK EDIT: CONFIG DISABLED
 
 ## Comment this out this if you wish to use the setup where jobs have more access.
 ## This is intended for servers with low populations - where there are not enough
