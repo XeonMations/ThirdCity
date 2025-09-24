@@ -67,7 +67,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = randomm_human_blood_type_name(),
+			"blood_type" = random_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -83,7 +83,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = randomm_human_blood_type_name(),
+			"blood_type" = random_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -100,7 +100,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = randomm_human_blood_type_name(),
+			"blood_type" = random_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()
@@ -116,7 +116,7 @@
 		list("donor" = null,
 			"viruses" = null,
 			"blood_DNA" = null,
-			"blood_type" = randomm_human_blood_type_name(),
+			"blood_type" = random_human_blood_type_name(),
 			"resistances" = null,
 			"trace_chem" = null))
 	update_appearance()

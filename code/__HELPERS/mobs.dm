@@ -22,7 +22,7 @@
 		)))
 
 // DARKPACK EDIT ADD START - Vitae
-/proc/randomm_human_blood_type_name()
+/proc/random_human_blood_type_name()
 	return pick_weight(
 		list(
 			BLOOD_TYPE_O_MINUS = 4,
