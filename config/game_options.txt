@@ -401,7 +401,8 @@ ROUNDSTART_RACES ghoul
 ## Disable roundstart species morgue cadavers?
 ## Cadavers in the morgue at the start of the round will be randomly picked from all enabled ROUNDSTART_RACES
 ## Recommended to leave this commented out so nonhuman species will have viable replacement bodies / organs when they die.
-# MORGUE_CADAVER_DISABLE_NONHUMANS
+MORGUE_CADAVER_DISABLE_NONHUMANS
+#DARKPACK CONFIG ENABLED
 
 ## Morgue Cadaver Species Probability
 ## The probability for nonhuman cadavers to spawn in the morgue.
@@ -416,9 +417,10 @@ MORGUE_CADAVER_OTHER_SPECIES_PROBABILITY 50
 #MORGUE_CADAVER_OVERRIDE_SPECIES lizard
 
 
-##Overflow job. Default is assistant. DARKPACK EDIT: SET TO "Citizen" FROM "Assistant"
+##Overflow job. Default is assistant.
 ## NOTE: This will overwrite anything you put in jobconfig.toml!
 OVERFLOW_JOB Citizen
+#DARKPACK EDIT: OVERFLOW_JOB SET TO "Citizen" FROM "Assistant"
 
 ## Overflow slot cap. Set to -1 for unlimited. If limited, it will still open up if every other job is full.
 ## NOTE: This will overwrite anything you put in jobconfig.toml!
