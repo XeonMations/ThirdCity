@@ -21,7 +21,7 @@
 			BLOOD_TYPE_AB_PLUS = 5,
 		)))
 
-// TFN EDIT ADD START - Vitae
+// DARKPACK EDIT ADD START - Vitae
 /proc/randomm_human_blood_type_name()
 	return pick_weight(
 		list(
