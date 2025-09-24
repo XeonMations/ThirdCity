@@ -10,7 +10,7 @@
 #define issupernatural(A) (isgarou(A) || isghoul(A) || iskindred(A))
 
 
-// TODO: [Lucia] implement other splats
+// TODO: [Rebase] implement other splats
 #define isgarou(A) (FALSE)
 
 
