@@ -1,5 +1,5 @@
 
-/datum/job/vampire/graveyard
+/datum/job/graveyard
 	title = "Graveyard Keeper"
 	department_head = list("Seneschal")
 	faction = "Vampire"
@@ -28,7 +28,7 @@
 
 /datum/outfit/job/graveyard
 	name = "Graveyard Keeper"
-	jobtype = /datum/job/vampire/graveyard
+	jobtype = /datum/job/graveyard
 
 	id = /obj/item/card/id/graveyard
 	shoes = /obj/item/clothing/shoes/vampire/jackboots

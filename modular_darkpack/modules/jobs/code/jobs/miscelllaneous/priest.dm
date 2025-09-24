@@ -1,5 +1,5 @@
 
-/datum/job/vampire/priest
+/datum/job/priest
 	title = "Priest"
 	department_head = list("Bishop")
 	faction = "Vampire"
@@ -27,7 +27,7 @@
 
 /datum/outfit/job/priest
 	name = "Priest"
-	jobtype = /datum/job/vampire/priest
+	jobtype = /datum/job/priest
 
 	uniform = /obj/item/clothing/under/vampire/graveyard
 	shoes = /obj/item/clothing/shoes/vampire/jackboots

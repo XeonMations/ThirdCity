@@ -1,5 +1,5 @@
 
-/datum/job/vampire/regent
+/datum/job/regent
 	title = "Chantry Regent"
 	department_head = list("Prince")
 	faction = "Vampire"
@@ -28,7 +28,7 @@
 
 /datum/outfit/job/regent
 	name = "Chantry Regent"
-	jobtype = /datum/job/vampire/regent
+	jobtype = /datum/job/regent
 
 	id = /obj/item/card/id/regent
 	glasses = /obj/item/clothing/glasses/vampire/perception

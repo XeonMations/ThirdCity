@@ -1,5 +1,5 @@
 
-/datum/job/vampire/clerk
+/datum/job/clerk
 	title = "Seneschal"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list("Prince")
@@ -52,7 +52,7 @@
 
 /datum/outfit/job/clerk
 	name = "Seneschal"
-	jobtype = /datum/job/vampire/clerk
+	jobtype = /datum/job/clerk
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/clerk

@@ -1,5 +1,5 @@
 
-/datum/job/vampire/triad_soldier
+/datum/job/triad_soldier
 	title = "Triad Soldier"
 	department_head = list("Triad Leadership")
 	faction = "Vampire"
@@ -34,7 +34,7 @@
 
 /datum/outfit/job/triad_soldier
 	name = "Triad Soldier"
-	jobtype = /datum/job/vampire/triad_soldier
+	jobtype = /datum/job/triad_soldier
 	uniform = /obj/item/clothing/under/vampire/suit
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 //	suit = /obj/item/clothing/suit/vampire/vest

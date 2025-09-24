@@ -1,5 +1,5 @@
 
-/datum/job/vampire/vdoctor
+/datum/job/vdoctor
 	title = "Doctor"
 	department_head = list("Clinic Director")
 	faction = "Vampire"
@@ -31,7 +31,7 @@
 
 /datum/outfit/job/vdoctor
 	name = "Doctor"
-	jobtype = /datum/job/vampire/vdoctor
+	jobtype = /datum/job/vdoctor
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/clinic
@@ -54,7 +54,7 @@
 	icon_state = "Doctor"
 
 
-/datum/job/vampire/vdirector
+/datum/job/vdirector
 	title = "Clinic Director"
 	department_head = list("Seneschal")
 	faction = "Vampire"
@@ -85,7 +85,7 @@
 
 /datum/outfit/job/vdirector
 	name = "Clinic Director"
-	jobtype = /datum/job/vampire/vdirector
+	jobtype = /datum/job/vdirector
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/clinic/director

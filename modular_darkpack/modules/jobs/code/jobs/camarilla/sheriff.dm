@@ -1,4 +1,4 @@
-/datum/job/vampire/sheriff
+/datum/job/sheriff
 	title = "Sheriff"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list("Prince")
@@ -46,7 +46,7 @@
 
 /datum/outfit/job/sheriff
 	name = "Sheriff"
-	jobtype = /datum/job/vampire/sheriff
+	jobtype = /datum/job/sheriff
 
 	ears = /obj/item/p25radio
 	id = /obj/item/card/id/sheriff
