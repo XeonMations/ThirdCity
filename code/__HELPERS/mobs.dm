@@ -34,7 +34,7 @@
 			BLOOD_TYPE_AB_MINUS = 1,
 			BLOOD_TYPE_AB_PLUS = 5,
 		))
-// TFN EDIT ADD END
+// DARKPACK EDIT ADD END
 
 /proc/random_eye_color()
 	switch(pick(20;"brown",20;"hazel",20;"grey",15;"blue",15;"green",1;"amber",1;"albino"))
