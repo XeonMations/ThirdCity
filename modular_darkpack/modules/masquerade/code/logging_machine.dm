@@ -49,8 +49,10 @@
 	var/list/log_save_cache = list()
 	log_save_cache += saved_logs
 	var/pages_to_print = length(log_save_cache) / MAX_PAGE_LINES
+	var/clearing_stats = user.st_get_stat(STAT_TECHNOLOGY) + user.st_get_stat(STAT_INTELLIGENCE)
+	var/clearing_time = (1.5 - (clearing_stats / 10)) SECONDS
 	for(var/page in 1 to ceil(pages_to_print))
-		if(!do_after(user, 0.5 SECONDS, src))
+		if(!do_after(user, clearing_time, src))
 			break
 		var/obj/item/paper/printed_paper = new /obj/item/paper(get_turf(src))
 
@@ -68,7 +70,7 @@
 		playsound(src, 'sound/machines/printer.ogg', 50, TRUE)
 		COOLDOWN_START(src, printing_noise, 5 SECONDS)
 
-/obj/machinery/logging_machine/proc/do_log_clearing(mob/user)
+/obj/machinery/logging_machine/proc/do_log_clearing(mob/living/user)
 	clearing_sound.start()
 	if(!do_after(user, 7 SECONDS, src))
 		addtimer(CALLBACK(src, PROC_REF(stop_sound)), 7 SECONDS)
