@@ -1,0 +1,4 @@
+author: "HotelMoonstone"
+delete-after: True
+changes:
+  - rscdel: "Removes redundant Quran"
