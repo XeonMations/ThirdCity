@@ -1,0 +1,6 @@
+author: "XeonMations"
+delete-after: True
+changes:
+  - rscadd: "Added vitae reagent, glows in the dark"
+  - rscadd: "Added bloodbags"
+  - rscadd: "Added blood bonds"
