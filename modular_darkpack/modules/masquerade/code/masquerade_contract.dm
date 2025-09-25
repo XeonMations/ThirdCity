@@ -2,7 +2,7 @@
 	name = "\improper elegant scroll"
 	desc = "An elegant looking scroll."
 	icon = 'modular_darkpack/modules/masquerade/icons/masquerade_contract.dmi'
-	onflooricon = 'modular_darkpack/modules/masquerade/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/masquerade/icons/onfloor.dmi')
 	icon_state = "masquerade"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
