@@ -1,9 +1,9 @@
 /datum/job_department/citizen
 	department_name = DEPARTMENT_CITIZEN
 	department_bitflags = DEPARTMENT_BITFLAG_CITIZEN
-	// Don't add department_head! Assistants names should not be in bold.
+	// Don't add department_head! citizens names should not be in bold.
 
-/// A special captain only department, for use by the preferences menu
+/// A special prince only department, for use by the preferences menu
 /datum/job_department/prince
 	department_name = DEPARTMENT_PRINCE
 	department_bitflags = DEPARTMENT_BITFLAG_PRINCE
@@ -17,5 +17,3 @@
 	display_order = 1
 	label_class = "camarilla"
 	ui_color = "#6681a5"
-	head_of_staff_access = ACCESS_CAPTAIN //These need a value, but the value doesnt matter since we dont use any specific accesses.
-	department_access = REGION_ALL_GLOBAL
