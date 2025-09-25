@@ -45,7 +45,7 @@
 	balloon_alert_to_viewers("printing logs!")
 	do_log_printing(user)
 
-/obj/machinery/logging_machine/proc/do_log_printing(mob/user)
+/obj/machinery/logging_machine/proc/do_log_printing(mob/living/user)
 	var/list/log_save_cache = list()
 	log_save_cache += saved_logs
 	var/pages_to_print = length(log_save_cache) / MAX_PAGE_LINES
