@@ -26,6 +26,8 @@
 		/datum/job_department/camarilla,
 	)
 
+	job_flags = CITY_JOB_FLAGS
+
 
 	minimal_masquerade = 3
 	allowed_species = list("Vampire", "Ghoul")
