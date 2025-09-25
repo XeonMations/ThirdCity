@@ -117,7 +117,7 @@ SUBSYSTEM_DEF(masquerade)
 		logging_machine.saved_logs += list(list(message, phone_source))
 
 // Save the player's masquerade level to their character sheet.
-/* DARKPACK TODO: PREFERENCES
+/* TODO: [Rebase] PREFERENCES
 /datum/controller/subsystem/masquerade/proc/save_persistent_masquerade(mob/living/player_breacher)
 	var/datum/preferences/preferences = GLOB.preferences_datums[ckey(player_breacher.key)]
 	if(preferences)
