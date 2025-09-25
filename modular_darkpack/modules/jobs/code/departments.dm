@@ -17,3 +17,5 @@
 	display_order = 1
 	label_class = "camarilla"
 	ui_color = "#6681a5"
+	head_of_staff_access = ACCESS_CAPTAIN //These need a value, but the value doesnt matter since we dont use any specific accesses.
+	department_access = REGION_ALL_GLOBAL

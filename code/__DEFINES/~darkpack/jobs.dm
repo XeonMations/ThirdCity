@@ -13,6 +13,8 @@
 //No department
 #define JOB_CITIZEN "Citizen"
 #define JOB_PRINCE "Prince"
+#define JOB_SHERIFF "Sheriff"
+#define JOB_HOUND "Hound"
 
 #define JOB_DISPLAY_ORDER_CITIZEN 1
 #define JOB_DISPLAY_ORDER_SALUBRI 2
@@ -80,6 +82,7 @@
 
 DEFINE_BITFIELD(departments_bitflags, list(
 	"CITIZEN" = DEPARTMENT_BITFLAG_CITIZEN,
+	"PRINCE" = DEPARTMENT_BITFLAG_PRINCE,
 	"CAMARILLA" = DEPARTMENT_BITFLAG_CAMARILLA,
 ))
 
@@ -91,6 +94,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 
 // Variable macros used to declare who is the supervisor for a given job, announced to the player when they join as any given job.
 #define SUPERVISOR_PRINCE "the Prince"
+#define SUPERVISOR_SHERIFF "the Sheriff"
 
 // Playtime tracking system, see jobs_exp.dm
 #define EXP_TYPE_KINDRED "Kindred"
