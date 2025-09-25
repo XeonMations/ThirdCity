@@ -73,8 +73,10 @@
 	if(!do_after(user, 7 SECONDS, src))
 		addtimer(CALLBACK(src, PROC_REF(stop_sound)), 7 SECONDS)
 		return
+	var/clearing_stats = user.st_get_stat(STAT_TECHNOLOGY) + user.st_get_stat(STAT_INTELLIGENCE)
+	var/clearing_time = (1.5 - (clearing_stats / 10)) SECONDS
 	for(var/paper in 1 to length(saved_logs))
-		if(!do_after(user, 0.5 SECONDS, src))
+		if(!do_after(user, clearing_time, src))
 			stop_sound()
 			break
 		var/obj/phone = saved_logs[1][2]
