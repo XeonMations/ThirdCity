@@ -9,3 +9,4 @@
 
 /datum/preference/numeric/generation/apply_to_human(mob/living/carbon/human/target, value)
 	target.generation = value
+	SEND_SIGNAL(target, COMSIG_GENERATION_PREFERENCE_CHANGED)

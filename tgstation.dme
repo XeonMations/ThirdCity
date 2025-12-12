@@ -459,6 +459,7 @@
 #include "code\__DEFINES\~darkpack\dcs\signals_object.dm"
 #include "code\__DEFINES\~darkpack\dcs\vampire_signals.dm"
 #include "code\__DEFINES\~darkpack\dcs\signals_mob\signals_mob.dm"
+#include "code\__DEFINES\~darkpack\dcs\signals_mob\signals_mob_carbon.dm"
 #include "code\__DEFINES\~darkpack\dcs\signals_mob\signals_mob_living.dm"
 #include "code\__DEFINES\~darkpack\traits\declarations.dm"
 #include "code\__DEFINES\~darkpack\traits\macros.dm"

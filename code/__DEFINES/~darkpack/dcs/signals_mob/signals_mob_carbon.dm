@@ -1,0 +1,1 @@
+#define COMSIG_GENERATION_PREFERENCE_CHANGED "generation_preference_changed"
