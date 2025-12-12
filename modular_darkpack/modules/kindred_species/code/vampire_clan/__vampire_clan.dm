@@ -84,10 +84,15 @@
 	if (joining_round)
 		RegisterSignal(vampire, COMSIG_MOB_LOGIN, PROC_REF(on_join_round), override = TRUE)
 
-	for(var/discipline in clan_disciplines)
-		// DARKPACK TODO - reimplement choosing disciplines
-		if(ispath(discipline, /datum/discipline))
-			vampire.give_discipline(new discipline(5))
+	var/list/preference_disciplines = vampire.client?.prefs?.read_preference(/datum/preference/toggle/ui_scale)
+	if(preference_disciplines)
+		create_disciplines(vampire.prefs)
+	else
+		// If we cant find the kindred's preferences, assume its an NPC and spawn it with maxed out clan disciplines.
+		var/list/disciplines = list()
+		for(var/datum/discipline/clan_discipline in clan_disciplines)
+			disciplines[clan_discipline] = 5
+		create_disciplines(disciplines)
 
 /**
  * Undoes the effects of on_gain to more or less

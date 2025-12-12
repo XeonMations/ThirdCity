@@ -83,6 +83,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_VTM_MORALITY "vtm_morality"
 /// Uses Vampire: The Masquerade Clans/Bloodlines
 #define TRAIT_VTM_CLANS "vtm_clans"
+/// Uses Vampire: The Masquerade Disciplines
+#define TRAIT_VTM_DISCIPLINES "vtm_disciplines"
 /// This species drinks blood
 #define TRAIT_BLOOD_DRINKER "blood_drinker"
 /// Does not biologically age, and so has a disconnected biological and chronological age

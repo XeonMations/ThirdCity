@@ -3,6 +3,10 @@
 	plural_form = "Ghouls"
 	id = SPECIES_GHOUL
 	changesource_flags = MIRROR_BADMIN
+	inherent_traits = list(
+		TRAIT_USES_SKINTONES,
+		TRAIT_VTM_DISCIPLINES,
+	)
 
 /mob/living/carbon/human/species/ghoul
 	race = /datum/species/human/ghoul
