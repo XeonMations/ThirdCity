@@ -1202,7 +1202,6 @@
 
 	var/effective_grab_state = grab_stats[GRAB_STAT_EFFECTIVE_STATE]
 	var/damage_on_resist_fail = grab_stats[GRAB_STAT_FAIL_DAMAGE]
-	var/escape_chance = grab_stats[GRAB_STAT_ESCAPE_CHANCE]
 
 	if(body_position == LYING_DOWN) //If prone, treat the grab state as one higher
 		effective_grab_state++
