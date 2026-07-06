@@ -378,31 +378,31 @@ export function JobsPage() {
                 <PriorityHeaders />
                 <Department department="Prince" />
                 <Department department="Camarilla" />
-                <Department department="Anarch" />
+                <Department department="Clinic" />
                 <Department department="Church" />
+                <Department department="Strip Club" />
               </Stack>
             </Stack.Item>
             <Stack.Item mt={-5.9}>
               <Stack vertical>
                 <PriorityHeaders />
+                <Department department="Anarch" />
                 <Department department="Chantry" />
-                <Department department="Clinic" />
-                <Department department="Strip_Club" />
-                <Department department="Warehouse" />
-                <Department department="Police" />
-                <Department department="Pentex" />
+                <Department department="Giovanni" />
+                <Department department="Manor" />
+                <Department department="Garou Nation" />
               </Stack>
             </Stack.Item>
             <Stack.Item>
               <Stack vertical>
                 <PriorityHeaders />
-                <Department department="Giovanni" />
-                <Department department="Manor" />
-                <Department department="Sabbat" />
+                <Department department="Warehouse" />
+                <Department department="Police" />
+                <Department department="City Services" />
                 <Department department="Citizen" />
-                <Department department="City_Services" />
-                <Department department="Garou_Nation" />
-                <Department department="Society_of_Leopold" />
+                <Department department="Sabbat" />
+                <Department department="Pentex" />
+                <Department department="Society of Leopold" />
               </Stack>
             </Stack.Item>
             {
