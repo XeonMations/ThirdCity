@@ -12,6 +12,7 @@
 
 //No department
 #define JOB_CITIZEN "Citizen"
+#define JOB_ORDINARY_CITIZEN "Unassigned"
 #define JOB_GRAVEYARD_KEEPER "Graveyard Keeper"
 #define JOB_STREET_JANITOR "Street Janitor"
 #define JOB_TAXI_DRIVER "Taxi Driver"
@@ -257,6 +258,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define SUPERVISOR_SOCIETY_OF_LEOPOLD "the Society of Leopold, the Inquisition, the local Provincial, and God"
 
 // Playtime tracking system, see jobs_exp.dm
+#warn weird one.
 #define EXP_TYPE_KINDRED "Kindred"
 #define EXP_TYPE_GAIA "Garou Nation"
 #define EXP_TYPE_SPIRAL "Pentex"

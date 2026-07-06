@@ -18,7 +18,7 @@
 	splat_slots = list(SPLAT_GHOUL = 1, SPLAT_KINFOLK = 1)
 
 	description = "Report emergencies to the correct emergency service."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 	known_contacts = list("Police Captain")
 
 /datum/outfit/job/vampire/dispatcher

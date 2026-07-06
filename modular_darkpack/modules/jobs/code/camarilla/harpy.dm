@@ -22,7 +22,7 @@
 	)
 
 	minimal_generation = 12	//Uncomment when players get exp enough
-	minimal_masquerade = 5
+	minimum_masquerade = 5
 
 	allowed_splats = list(SPLAT_KINDRED)
 

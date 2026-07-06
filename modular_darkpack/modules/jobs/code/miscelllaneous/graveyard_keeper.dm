@@ -13,7 +13,7 @@
 		/datum/job_department/city_services,
 	)
 	description = "A vile curse has gripped the dead of this city. You must keep the graveyard clean and the Masquerade intact."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL)
 
 /datum/outfit/job/vampire/graveyard

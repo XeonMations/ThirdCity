@@ -16,7 +16,7 @@
 
 
 	description = "You work at the warehouse, moving boxes and selling not-quite legal goods to anyone who has the money."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/supply_tech
 	name = "Supply Technician"

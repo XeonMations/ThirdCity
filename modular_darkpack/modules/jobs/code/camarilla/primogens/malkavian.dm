@@ -24,7 +24,7 @@
 
 	minimal_generation = 12
 	minimum_immortal_age = 5 // Actually Malkavian Primo is whoever showed for work that day. Crazy bunch.
-	minimal_masquerade = 5
+	minimum_masquerade = 5
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_DOMINATE_MALKAVIAN)
 

@@ -16,7 +16,7 @@
 	allowed_splats = list(SPLAT_NONE)
 
 	description = "Underpaid, overworked, and understrength. Do your best to keep the order in " + CITY_NAME + ". Keep the officers in line."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/police_captain
 	name = "Police Captain"

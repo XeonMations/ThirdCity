@@ -17,7 +17,7 @@
 	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE)
 
 	description = "You are a Childe of the Voivode-in-Waiting, the ancient Tzimisce Elder who has rested beneath the Earth for an age longer than the city that now rests on their bones. Honor them in all your actions, and remember that you walk with their favor."
-	minimal_masquerade = 2
+	minimum_masquerade = 2
 
 	known_contacts = list("Prince", "Baron", "Sheriff")
 

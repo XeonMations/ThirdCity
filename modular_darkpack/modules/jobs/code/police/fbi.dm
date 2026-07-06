@@ -15,7 +15,7 @@
 
 	allowed_splats = list(SPLAT_NONE)
 	description = "Enforce the Law."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 	known_contacts = list("Police Captain")
 

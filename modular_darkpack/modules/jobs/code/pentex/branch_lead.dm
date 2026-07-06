@@ -23,7 +23,7 @@
 		"Endron Operations Director"
 	)
 
-	minimal_masquerade = 5
+	minimum_masquerade = 5
 	// minimal_renown_rank = 4
 	allowed_tribes = list(TRIBE_BLACK_SPIRAL_DANCERS, TRIBE_RONIN)
 

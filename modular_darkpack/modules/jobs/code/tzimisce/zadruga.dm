@@ -15,7 +15,7 @@
 
 	allowed_splats = list(SPLAT_GHOUL)
 	description = "You were born in servitude to the Master of the Manor: your father served the Voivode, as did his father. Now, you carry their blood, and with it their responsibilities."
-	minimal_masquerade = 2
+	minimum_masquerade = 2
 
 	known_contacts = list("Prince", "Baron", "Sheriff")
 

@@ -12,7 +12,7 @@
 		/datum/job_department/citizen
 	)
 	job_flags = CITY_JOB_FLAGS
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 	alt_titles = list(
 		"Citizen",
 		"Private Investigator",

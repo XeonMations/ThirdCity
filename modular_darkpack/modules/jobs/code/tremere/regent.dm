@@ -14,7 +14,7 @@
 	display_order = JOB_DISPLAY_ORDER_REGENT
 
 	description = "Lead the Chantry. You serve as both the Regent and Tremere Primogen. You report to the Tremere Lord of this region first, Prince second."
-	minimal_masquerade = 4
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_TREMERE)
 

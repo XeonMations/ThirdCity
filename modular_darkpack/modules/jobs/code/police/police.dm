@@ -23,7 +23,7 @@
 	splat_slots = list(SPLAT_GHOUL = 2, SPLAT_KINFOLK = 2)
 
 	description = "Enforce the Law."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 	known_contacts = list("Police Captain")
 

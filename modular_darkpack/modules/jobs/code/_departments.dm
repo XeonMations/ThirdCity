@@ -130,7 +130,6 @@
 	#warn give its own ui color?
 
 // Antag*
-#warn YOUR NOT IN CHARACTER SETUP.
 /datum/job_department/society_of_leopold
 	department_name = DEPARTMENT_SOCIETY_OF_LEOPOLD
 	department_bitflags = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD
