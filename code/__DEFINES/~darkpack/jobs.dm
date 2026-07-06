@@ -12,11 +12,8 @@
 
 //No department
 #define JOB_CITIZEN "Citizen"
-#define JOB_ORDINARY_CITIZEN "Ordinary Citizen"
-#define JOB_BARISTA "Barista"
 #define JOB_GRAVEYARD_KEEPER "Graveyard Keeper"
 #define JOB_STREET_JANITOR "Street Janitor"
-#define JOB_CLUB_WORKER "Club Worker"
 #define JOB_TAXI_DRIVER "Taxi Driver"
 
 //Camarilla
@@ -67,6 +64,9 @@
 
 //Church
 #define JOB_PRIEST "Priest"
+
+//Strip Club
+#define JOB_CLUB_WORKER "Club Worker"
 
 //Giovanni
 #define JOB_CAPO "Capo"

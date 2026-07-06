@@ -19,7 +19,6 @@
 	department_head = /datum/job/vampire/prince
 	department_experience_type = EXP_TYPE_CAMARILLA
 	display_order = 1
-	label_class = "camarilla"
 	ui_color = "#6681a5"
 
 /datum/job_department/church
@@ -28,7 +27,6 @@
 	department_head = /datum/job/vampire/primogen_lasombra
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 2
-	label_class = "church"
 	ui_color = "#8c66a5"
 
 /datum/job_department/clinic
@@ -37,7 +35,6 @@
 	department_head = /datum/job/vampire/primogen_malkavian
 	department_experience_type = EXP_TYPE_CLINIC
 	display_order = 3
-	label_class = "clinic"
 	ui_color = "#6681a5"
 
 /datum/job_department/strip_club
@@ -46,7 +43,6 @@
 	department_head = /datum/job/vampire/primogen_toreador
 	department_experience_type = EXP_TYPE_CLUB
 	display_order = 4
-	label_class = "strip_club"
 	ui_color = "#a566a5ff"
 
 // Anarch
@@ -56,7 +52,6 @@
 	department_head = /datum/job/vampire/baron
 	department_experience_type = EXP_TYPE_ANARCH
 	display_order = 5
-	label_class = "anarch"
 	ui_color = "#a56666"
 
 // Antuk or whatever
@@ -66,7 +61,6 @@
 	department_head = /datum/job/vampire/capo
 	department_experience_type = EXP_TYPE_GIOVANNI
 	display_order = 6
-	label_class = "giovanni"
 	ui_color = "#66a569ff"
 
 /datum/job_department/chantry
@@ -75,7 +69,6 @@
 	department_head = /datum/job/vampire/regent
 	department_experience_type = EXP_TYPE_CHANTRY
 	display_order = 7
-	label_class = "chantry"
 	ui_color = "#a56666ff"
 
 /datum/job_department/manor
@@ -84,7 +77,6 @@
 	department_head = /datum/job/vampire/voivode
 	department_experience_type = EXP_TYPE_MANOR
 	display_order = 8
-	label_class = "manor"
 	ui_color = "#a066a5ff"
 
 // Antag*
@@ -94,7 +86,6 @@
 	department_head = /datum/job/vampire/sabbatductus
 	department_experience_type = EXP_TYPE_SABBAT
 	display_order = 9
-	label_class = "sabbat"
 	ui_color = "#4e4e4eff"
 
 // Fera
@@ -104,7 +95,6 @@
 	department_head = /datum/job/vampire/councillor
 	department_experience_type = EXP_TYPE_GAIA
 	display_order = 10
-	label_class = "gaia"
 	ui_color = "#b4bd64"
 
 // Antag*
@@ -114,7 +104,6 @@
 	department_head = /datum/job/vampire/branch_lead
 	department_experience_type = EXP_TYPE_SPIRAL
 	display_order = 11
-	label_class = "pentex"
 	ui_color = COLOR_CORP_ENDRON
 
 /datum/job_department/supply
@@ -123,7 +112,6 @@
 	department_head = /datum/job/vampire/dealer
 	department_experience_type = EXP_TYPE_WAREHOUSE
 	display_order = 12
-	label_class = "supply"
 	ui_color = "#a58866"
 
 // Humans
@@ -133,7 +121,6 @@
 	department_head = /datum/job/vampire/police_captain
 	department_experience_type = EXP_TYPE_POLICE
 	display_order = 13
-	label_class = "police"
 	ui_color = "#6a6288ff"
 
 /datum/job_department/city_services
@@ -151,7 +138,6 @@
 	#warn why are you reusing the church xp.
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 15
-	label_class = "society"
 	ui_color = "#fff022"
 
 // Bottom of the barrel

@@ -368,7 +368,7 @@ export function JobsPage() {
     <>
       <JoblessRoleDropdown />
       <Stack vertical fill>
-        <Stack.Item mt={15}>
+        <Stack.Item mt={10}> {/* // DARKPACK EDIT CHANGE */}
           <Stack fill g={1} className="PreferencesMenu__Jobs">
             {
               // DARKPACK EDIT ADD START
@@ -383,26 +383,26 @@ export function JobsPage() {
                 <Department department="Strip Club" />
               </Stack>
             </Stack.Item>
-            <Stack.Item mt={-5.9}>
+            <Stack.Item mt={-3.9}>
               <Stack vertical>
                 <PriorityHeaders />
                 <Department department="Anarch" />
-                <Department department="Chantry" />
                 <Department department="Giovanni" />
+                <Department department="Chantry" />
                 <Department department="Manor" />
+                <Department department="Sabbat" />
                 <Department department="Garou Nation" />
               </Stack>
             </Stack.Item>
             <Stack.Item>
               <Stack vertical>
                 <PriorityHeaders />
+                <Department department="Pentex" />
                 <Department department="Warehouse" />
                 <Department department="Police" />
+                <Department department="Society of Leopold" />
                 <Department department="City Services" />
                 <Department department="Citizen" />
-                <Department department="Sabbat" />
-                <Department department="Pentex" />
-                <Department department="Society of Leopold" />
               </Stack>
             </Stack.Item>
             {
