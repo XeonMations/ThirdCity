@@ -122,10 +122,12 @@
 	label_class = "pentex"
 	ui_color = COLOR_CORP_ENDRON
 
+#warn YOUR NOT IN CHARACTER SETUP.
 /datum/job_department/society_of_leopold
 	department_name = DEPARTMENT_SOCIETY_OF_LEOPOLD
 	department_bitflags = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD
 	department_head = /datum/job/vampire/abbe
+	#warn why are you reusing the church xp.
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 13
 	label_class = "society"
@@ -135,6 +137,7 @@
 	department_name = DEPARTMENT_CITY_SERVICES
 	department_bitflags = DEPARTMENT_BITFLAG_CITY_SERVICES
 	display_order = 14
+	#warn give its own ui color?
 
 /datum/job_department/citizen
 	department_name = DEPARTMENT_CITIZEN

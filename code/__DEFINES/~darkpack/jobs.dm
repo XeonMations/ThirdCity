@@ -273,6 +273,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define EXP_TYPE_POLICE "Police Force"
 #define EXP_TYPE_NATIONAL_SECURITY "National Security"
 #define EXP_TYPE_SERVICES "City Services"
+#warn this prob should just say clinic genericly.
 #define EXP_TYPE_CLINIC "St. John's Clinic"
 #define EXP_TYPE_GIOVANNI "Giovanni Family"
 #define EXP_TYPE_MANOR "Tzimisce Manor"
