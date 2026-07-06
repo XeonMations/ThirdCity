@@ -7,7 +7,6 @@
 	config_tag = "JANITOR"
 	outfit = /datum/outfit/job/vampire/janitor
 	job_flags = CITY_JOB_FLAGS
-	department_for_prefs = /datum/job_department/city_services
 	departments_list = list(
 		/datum/job_department/city_services,
 	)

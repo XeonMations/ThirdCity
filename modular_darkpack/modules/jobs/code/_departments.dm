@@ -1,3 +1,18 @@
+/**
+ * Faction sorting is a little sematic but its generally
+ *  Vampire
+ *  Fera
+ *  Human
+ * sorted then further by
+ *  Supernatural
+ *  Antag
+ *  Human
+ */
+
+
+// Kindred
+
+// Cammy
 /datum/job_department/camarilla
 	department_name = DEPARTMENT_CAMARILLA
 	department_bitflags = DEPARTMENT_BITFLAG_CAMARILLA
@@ -34,6 +49,7 @@
 	label_class = "strip_club"
 	ui_color = "#a566a5ff"
 
+// Anarch
 /datum/job_department/anarch
 	department_name = DEPARTMENT_ANARCH
 	department_bitflags = DEPARTMENT_BITFLAG_ANARCH
@@ -43,33 +59,35 @@
 	label_class = "anarch"
 	ui_color = "#a56666"
 
-/datum/job_department/supply
-	department_name = DEPARTMENT_SUPPLY
-	department_bitflags = DEPARTMENT_BITFLAG_SUPPLY
-	department_head = /datum/job/vampire/dealer
-	department_experience_type = EXP_TYPE_WAREHOUSE
-	display_order = 6
-	label_class = "supply"
-	ui_color = "#a58866"
-
+// Antuk or whatever
 /datum/job_department/giovanni
 	department_name = DEPARTMENT_GIOVANNI
 	department_bitflags = DEPARTMENT_BITFLAG_GIOVANNI
 	department_head = /datum/job/vampire/capo
 	department_experience_type = EXP_TYPE_GIOVANNI
-	display_order = 7
+	display_order = 6
 	label_class = "giovanni"
 	ui_color = "#66a569ff"
 
-/datum/job_department/police
-	department_name = DEPARTMENT_POLICE
-	department_bitflags = DEPARTMENT_BITFLAG_POLICE
-	department_head = /datum/job/vampire/police_captain
-	department_experience_type = EXP_TYPE_POLICE
-	display_order = 8
-	label_class = "police"
-	ui_color = "#6a6288ff"
+/datum/job_department/chantry
+	department_name = DEPARTMENT_CHANTRY
+	department_bitflags = DEPARTMENT_BITFLAG_CHANTRY
+	department_head = /datum/job/vampire/regent
+	department_experience_type = EXP_TYPE_CHANTRY
+	display_order = 7
+	label_class = "chantry"
+	ui_color = "#a56666ff"
 
+/datum/job_department/manor
+	department_name = DEPARTMENT_MANOR
+	department_bitflags = DEPARTMENT_BITFLAG_MANOR
+	department_head = /datum/job/vampire/voivode
+	department_experience_type = EXP_TYPE_MANOR
+	display_order = 8
+	label_class = "manor"
+	ui_color = "#a066a5ff"
+
+// Antag*
 /datum/job_department/sabbat
 	department_name = DEPARTMENT_SABBAT
 	department_bitflags = DEPARTMENT_BITFLAG_SABBAT
@@ -79,52 +97,44 @@
 	label_class = "sabbat"
 	ui_color = "#4e4e4eff"
 
-/datum/job_department/chantry
-	department_name = DEPARTMENT_CHANTRY
-	department_bitflags = DEPARTMENT_BITFLAG_CHANTRY
-	department_head = /datum/job/vampire/regent
-	department_experience_type = EXP_TYPE_CHANTRY
-	display_order = 1
-	label_class = "chantry"
-	ui_color = "#a56666ff"
-
-/datum/job_department/manor
-	department_name = DEPARTMENT_MANOR
-	department_bitflags = DEPARTMENT_BITFLAG_MANOR
-	department_head = /datum/job/vampire/voivode
-	department_experience_type = EXP_TYPE_MANOR
-	display_order = 10
-	label_class = "manor"
-	ui_color = "#a066a5ff"
-
+// Fera
 /datum/job_department/gaia
 	department_name = DEPARTMENT_GAIA
 	department_bitflags = DEPARTMENT_BITFLAG_GAIA
 	department_head = /datum/job/vampire/councillor
 	department_experience_type = EXP_TYPE_GAIA
-	display_order = 11
+	display_order = 10
 	label_class = "gaia"
 	ui_color = "#b4bd64"
 
+// Antag*
 /datum/job_department/pentex
 	department_name = DEPARTMENT_PENTEX
 	department_bitflags = DEPARTMENT_BITFLAG_PENTEX
 	department_head = /datum/job/vampire/branch_lead
 	department_experience_type = EXP_TYPE_SPIRAL
-	display_order = 12
+	display_order = 11
 	label_class = "pentex"
 	ui_color = COLOR_CORP_ENDRON
 
-#warn YOUR NOT IN CHARACTER SETUP.
-/datum/job_department/society_of_leopold
-	department_name = DEPARTMENT_SOCIETY_OF_LEOPOLD
-	department_bitflags = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD
-	department_head = /datum/job/vampire/abbe
-	#warn why are you reusing the church xp.
-	department_experience_type = EXP_TYPE_CHURCH
+/datum/job_department/supply
+	department_name = DEPARTMENT_SUPPLY
+	department_bitflags = DEPARTMENT_BITFLAG_SUPPLY
+	department_head = /datum/job/vampire/dealer
+	department_experience_type = EXP_TYPE_WAREHOUSE
+	display_order = 12
+	label_class = "supply"
+	ui_color = "#a58866"
+
+// Humans
+/datum/job_department/police
+	department_name = DEPARTMENT_POLICE
+	department_bitflags = DEPARTMENT_BITFLAG_POLICE
+	department_head = /datum/job/vampire/police_captain
+	department_experience_type = EXP_TYPE_POLICE
 	display_order = 13
-	label_class = "society"
-	ui_color = "#fff022"
+	label_class = "police"
+	ui_color = "#6a6288ff"
 
 /datum/job_department/city_services
 	department_name = DEPARTMENT_CITY_SERVICES
@@ -132,8 +142,21 @@
 	display_order = 14
 	#warn give its own ui color?
 
+// Antag*
+#warn YOUR NOT IN CHARACTER SETUP.
+/datum/job_department/society_of_leopold
+	department_name = DEPARTMENT_SOCIETY_OF_LEOPOLD
+	department_bitflags = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD
+	department_head = /datum/job/vampire/abbe
+	#warn why are you reusing the church xp.
+	department_experience_type = EXP_TYPE_CHURCH
+	display_order = 15
+	label_class = "society"
+	ui_color = "#fff022"
+
+// Bottom of the barrel
 /datum/job_department/citizen
 	department_name = DEPARTMENT_CITIZEN
 	department_bitflags = DEPARTMENT_BITFLAG_CITIZEN
-	display_order = 15
+	display_order = 16
 	// Don't add department_head! citizens names should not be in bold.

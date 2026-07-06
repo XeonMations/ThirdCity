@@ -9,7 +9,6 @@
 	config_tag = "CLUB_WORKER"
 	display_order = JOB_DISPLAY_ORDER_STRIP
 	exp_required_type_department = EXP_TYPE_CLUB
-	department_for_prefs = /datum/job_department/strip_club
 	departments_list = list(
 		/datum/job_department/strip_club
 	)

@@ -17,7 +17,6 @@
 	outfit = /datum/outfit/job/vampire/malkav
 
 	display_order = JOB_DISPLAY_ORDER_MALKAVIAN
-	department_for_prefs = /datum/job_department/camarilla
 	departments_list = list(
 		/datum/job_department/clinic,
 		/datum/job_department/camarilla,

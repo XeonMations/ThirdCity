@@ -9,7 +9,6 @@
 	outfit = /datum/outfit/job/vampire/graveyard
 	job_flags = CITY_JOB_FLAGS
 	display_order = JOB_DISPLAY_ORDER_GRAVEYARD
-	department_for_prefs = /datum/job_department/city_services
 	departments_list = list(
 		/datum/job_department/city_services,
 	)

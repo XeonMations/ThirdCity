@@ -16,7 +16,6 @@
 	outfit = /datum/outfit/job/vampire/hound
 
 	display_order = JOB_DISPLAY_ORDER_HOUND
-	department_for_prefs = /datum/job_department/camarilla
 	departments_list = list(
 		/datum/job_department/camarilla,
 	)

@@ -9,7 +9,6 @@
 	outfit = /datum/outfit/job/vampire/tapster
 
 	display_order = JOB_DISPLAY_ORDER_TAPSTER
-	department_for_prefs = /datum/job_department/anarch
 	departments_list = list(
 		/datum/job_department/anarch,
 	)

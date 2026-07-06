@@ -28,7 +28,6 @@
 	minimal_masquerade = 3
 
 	display_order = JOB_DISPLAY_ORDER_EMPLOYEE
-	department_for_prefs = /datum/job_department/pentex
 	departments_list = list(
 		/datum/job_department/pentex,
 	)

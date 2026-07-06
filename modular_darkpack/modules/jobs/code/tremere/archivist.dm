@@ -8,7 +8,6 @@
 	outfit = /datum/outfit/job/vampire/archivist
 	job_flags = CITY_JOB_FLAGS
 	exp_required_type_department = EXP_TYPE_CHANTRY
-	department_for_prefs = /datum/job_department/chantry
 	departments_list = list(
 		/datum/job_department/chantry,
 	)

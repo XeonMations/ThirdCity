@@ -17,7 +17,6 @@
 	outfit = /datum/outfit/job/vampire/lasombraprim
 
 	display_order = JOB_DISPLAY_ORDER_LASOMBRA
-	department_for_prefs = /datum/job_department/camarilla
 	departments_list = list(
 		/datum/job_department/church,
 		/datum/job_department/camarilla,
