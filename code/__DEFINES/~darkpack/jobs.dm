@@ -79,10 +79,6 @@
 #define JOB_SABBAT_PACK "Sabbat Pack"
 #define JOB_SABBAT_SABBATIST "Sabbatist"
 
-// Axe Gang
-#define JOB_AXE_LEADER "Screentender"
-#define JOB_AXE_GANG "Axe Gang"
-
 // Supply
 #define JOB_DEALER "Dealer"
 #define JOB_SUPPLY_TECH "Supply Technician"
