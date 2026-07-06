@@ -1,10 +1,3 @@
-/// A special prince only department, for use by the preferences menu
-/datum/job_department/prince
-	department_name = DEPARTMENT_PRINCE
-	department_bitflags = DEPARTMENT_BITFLAG_PRINCE
-	department_head = /datum/job/vampire/prince
-	ui_color = "#6681a5"
-
 /datum/job_department/camarilla
 	department_name = DEPARTMENT_CAMARILLA
 	department_bitflags = DEPARTMENT_BITFLAG_CAMARILLA
@@ -17,7 +10,7 @@
 /datum/job_department/church
 	department_name = DEPARTMENT_CHURCH
 	department_bitflags = DEPARTMENT_BITFLAG_CHURCH
-	department_head = /datum/job/vampire/prince
+	department_head = /datum/job/vampire/primogen_lasombra
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 2
 	label_class = "church"
@@ -32,12 +25,21 @@
 	label_class = "clinic"
 	ui_color = "#6681a5"
 
+/datum/job_department/strip_club
+	department_name = DEPARTMENT_STRIP_CLUB
+	department_bitflags = DEPARTMENT_BITFLAG_STRIP_CLUB
+	department_head = /datum/job/vampire/primogen_toreador
+	department_experience_type = EXP_TYPE_CLUB
+	display_order = 4
+	label_class = "strip_club"
+	ui_color = "#a566a5ff"
+
 /datum/job_department/anarch
 	department_name = DEPARTMENT_ANARCH
 	department_bitflags = DEPARTMENT_BITFLAG_ANARCH
 	department_head = /datum/job/vampire/baron
 	department_experience_type = EXP_TYPE_ANARCH
-	display_order = 4
+	display_order = 5
 	label_class = "anarch"
 	ui_color = "#a56666"
 
@@ -46,18 +48,9 @@
 	department_bitflags = DEPARTMENT_BITFLAG_SUPPLY
 	department_head = /datum/job/vampire/dealer
 	department_experience_type = EXP_TYPE_WAREHOUSE
-	display_order = 5
+	display_order = 6
 	label_class = "supply"
 	ui_color = "#a58866"
-
-/datum/job_department/strip_club
-	department_name = DEPARTMENT_STRIP_CLUB
-	department_bitflags = DEPARTMENT_BITFLAG_STRIP_CLUB
-	department_head = /datum/job/vampire/primogen_toreador
-	department_experience_type = EXP_TYPE_CLUB
-	display_order = 6
-	label_class = "strip_club"
-	ui_color = "#a566a5ff"
 
 /datum/job_department/giovanni
 	department_name = DEPARTMENT_GIOVANNI
