@@ -873,16 +873,16 @@ GLOBAL_ALIST_INIT(human_heights_to_offsets, alist(
 	#define BODYPARTS_LOW_LAYER 23.1
 	/// Mutantrace features (tail when looking south) that must appear behind the body parts
 	#define BODY_BEHIND_LAYER 23.2
-	// DARKPACK EDIT ADD START - POWERS
-	/// Temporary effects applied via gifts/discs/etc
-	#define POWERS_LAYER 23.8
-	// DARKPACK EDIT ADD END
 	/// Mutations layer - Tk headglows, cold resistance glow, etc. Very bottom of the mob
 	#define MUTATIONS_LAYER 23.9
+// DARKPACK EDIT ADD START - POWERS
+/// Temporary effects applied via gifts/discs/etc
+#define POWERS_LAYER 24
+// DARKPACK EDIT ADD END
 /// Total number of standing overlays.
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK.
 /// (You ONLY need to update this if you add a standing overlay, adding an integer.)
-#define TOTAL_LAYERS 23
+#define TOTAL_LAYERS 24 // DARKPACK EDIT CHANGE - POWERS
 
 //Bitflags for the layers a bodypart overlay can draw on (can be drawn on multiple layers)
 /// Draws overlay on the BODY_FRONT_LAYER
