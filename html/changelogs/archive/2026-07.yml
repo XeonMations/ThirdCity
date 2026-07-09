@@ -1,28 +1,14 @@
-2026-07-01:
-  ArcaneMusic:
-  - rscadd: Cargo may now purchase jet boots, boots that enable sustained flight,
-      for 40,000 credits via the imports section.
-  CabinetOnFire:
-  - bugfix: Fixes crates not respecting density in all cases and being able to move
-      into other crates or tables
-  Ghommie:
-  - rscadd: The kitchen fridges may have additional ingredients on certain holidays,
-      in particular Atrakor's Might (lizardpeople) and Fleet Day (mothpeople), and
-      Vegan Day.
-  - rscadd: Added a few more holyday-specific mail items.
-  - rscadd: Replaces the beer keg in the bar backroom with special kegs on St. Patrick's
-      Day, Beer Day and Speak-Like-a-Pirate day. On any other day, there's a chance
-      that the beer keg will be replaced with one containing whiskey or rum, or in
-      rare cases, one of those special kegs.
-  LT3:
-  - bugfix: Fixed jaws of recovery not being able to be stored in the paramedic EMT
-      belt
-  Melbert:
-  - bugfix: Fix emote overlays sticking
-  - balance: Mutation toxins now work on plasmamen, skeletons, zombies, spirits, and
-      vampires
-  Yobrocharlie:
-  - rscdel: Removed both mounted guns in the heretic gateway per headmin request
-  vinylspiders:
-  - code_imp: bodyshape is now accessible in build_worn_overlays() and similar procs.
-  - image: lizards now have support female gender shaping for their suits
+2026-07-06:
+  FalloutFalcon:
+  - bugfix: Rainstorms work again
+  - balance: All current events can now only trigger once
+  - balance: if the faulty grid city trait is active it wont ALSO trigger the blackout
+      event. Fuse-boxes should only break once therefore.
+  - balance: Small chance for blackout to only MOSTLY fuck up a fusebox
+  - rscadd: Klaives; the silvered blades of the fera
+  - qol: Clan and Tribe keys wont spawn if the map does not have any corresponding
+      doors
+  Icarus-The-Sun:
+  - bugfix: grocery store sells real spaghetti
+  Magisterium2022:
+  - bugfix: Fixes Sense the Sin outputting text to target instead of user.
