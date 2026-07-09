@@ -7952,6 +7952,7 @@
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\__vampire_clan.dm"
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clan_globals.dm"
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clan_helpers.dm"
+#include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clan_mark.dm"
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clan_mark_pref.dm"
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clan_pref.dm"
 #include "modular_darkpack\modules\vampire_the_masquerade\code\vampire_clan\clans\banu_haqim.dm"
