@@ -24,13 +24,14 @@
 	var/datum/subsplat/vampire_clan/clan = get_vampire_clan(clan_type)
 	if(!clan || !clan.clan_marks)
 		return list("none")
-	return clan.clan_marks + "none"
+
+	return GLOB.beast_mark_names_by_clan[clan.type]
 
 /datum/preference/external_choiced/clan_mark/create_informed_default_value(datum/preferences/preferences)
 	var/clan_type = preferences.read_preference(/datum/preference/choiced/subsplat/vampire_clan)
 	var/datum/subsplat/vampire_clan/clan = get_vampire_clan(clan_type)
 	if(clan?.default_accessory)
-		return clan.default_accessory
+		return GLOB.beast_marks_to_names_reverse[clan.default_accessory]
 	return pick(get_choices(preferences))
 
 /datum/preference/external_choiced/clan_mark/apply_to_human(mob/living/carbon/human/target, value)
@@ -42,9 +43,9 @@
 
 	clan.clear_old_overlays(target)
 
-	if(!ispath(value, /datum/bodypart_overlay/simple/clan_mark))
+	var/datum/bodypart_overlay/simple/clan_mark/mark_type = GLOB.beast_marks_to_names[value]
+	if(!ispath(mark_type, /datum/bodypart_overlay/simple/clan_mark))
 		return
-	var/datum/bodypart_overlay/simple/clan_mark/mark_type = value
 
 	var/obj/item/bodypart/limb = target.get_bodypart(mark_type::using_limb)
 	limb.add_bodypart_overlay(new mark_type())
