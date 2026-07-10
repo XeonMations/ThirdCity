@@ -29,7 +29,7 @@
 /datum/preference/external_choiced/clan_mark/create_informed_default_value(datum/preferences/preferences)
 	var/clan_type = preferences.read_preference(/datum/preference/choiced/subsplat/vampire_clan)
 	var/datum/subsplat/vampire_clan/clan = get_vampire_clan(clan_type)
-	if(clan.default_accessory)
+	if(clan?.default_accessory)
 		return clan.default_accessory
 	return pick(get_choices(preferences))
 
