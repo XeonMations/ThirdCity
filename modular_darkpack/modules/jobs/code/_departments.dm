@@ -15,7 +15,6 @@
 	department_head = /datum/job/vampire/prince
 	department_experience_type = EXP_TYPE_CAMARILLA
 	display_order = 1
-	label_class = "camarilla"
 	ui_color = "#6681a5"
 
 /datum/job_department/church
@@ -24,7 +23,6 @@
 	department_head = /datum/job/vampire/prince
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 1
-	label_class = "church"
 	ui_color = "#8c66a5"
 
 /datum/job_department/clinic
@@ -33,7 +31,6 @@
 	department_head = /datum/job/vampire/primogen_malkavian
 	department_experience_type = EXP_TYPE_CLINIC
 	display_order = 1
-	label_class = "clinic"
 	ui_color = "#6681a5"
 
 /datum/job_department/anarch
@@ -42,7 +39,6 @@
 	department_head = /datum/job/vampire/baron
 	department_experience_type = EXP_TYPE_ANARCH
 	display_order = 1
-	label_class = "anarch"
 	ui_color = "#a56666"
 
 /datum/job_department/supply
@@ -51,7 +47,6 @@
 	department_head = /datum/job/vampire/dealer
 	department_experience_type = EXP_TYPE_WAREHOUSE
 	display_order = 1
-	label_class = "supply"
 	ui_color = "#a58866"
 
 /datum/job_department/strip_club
@@ -60,7 +55,6 @@
 	department_head = /datum/job/vampire/primogen_toreador
 	department_experience_type = EXP_TYPE_CLUB
 	display_order = 1
-	label_class = "strip_club"
 	ui_color = "#a566a5ff"
 
 /datum/job_department/giovanni
@@ -69,7 +63,6 @@
 	department_head = /datum/job/vampire/capo
 	department_experience_type = EXP_TYPE_GIOVANNI
 	display_order = 1
-	label_class = "giovanni"
 	ui_color = "#66a569ff"
 
 /datum/job_department/police
@@ -78,7 +71,6 @@
 	department_head = /datum/job/vampire/police_captain
 	department_experience_type = EXP_TYPE_POLICE
 	display_order = 1
-	label_class = "police"
 	ui_color = "#6a6288ff"
 
 /datum/job_department/sabbat
@@ -87,7 +79,6 @@
 	department_head = /datum/job/vampire/sabbatductus
 	department_experience_type = EXP_TYPE_SABBAT
 	display_order = 1
-	label_class = "sabbat"
 	ui_color = "#4e4e4eff"
 
 /datum/job_department/chantry
@@ -96,7 +87,6 @@
 	department_head = /datum/job/vampire/regent
 	department_experience_type = EXP_TYPE_CHANTRY
 	display_order = 1
-	label_class = "chantry"
 	ui_color = "#a56666ff"
 
 /datum/job_department/manor
@@ -105,7 +95,6 @@
 	department_head = /datum/job/vampire/voivode
 	department_experience_type = EXP_TYPE_MANOR
 	display_order = 1
-	label_class = "manor"
 	ui_color = "#a066a5ff"
 
 /datum/job_department/city_services
@@ -118,7 +107,6 @@
 	department_head = /datum/job/vampire/councillor
 	department_experience_type = EXP_TYPE_GAIA
 	display_order = 1
-	label_class = "gaia"
 	ui_color = "#b4bd64"
 
 /datum/job_department/pentex
@@ -127,7 +115,6 @@
 	department_head = /datum/job/vampire/branch_lead
 	department_experience_type = EXP_TYPE_SPIRAL
 	display_order = 1
-	label_class = "pentex"
 	ui_color = COLOR_CORP_ENDRON
 
 /datum/job_department/society_of_leopold
@@ -136,5 +123,4 @@
 	department_head = /datum/job/vampire/abbe
 	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 1
-	label_class = "society"
 	ui_color = "#fff022"
