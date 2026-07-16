@@ -189,15 +189,6 @@
 	human.update_appearance(UPDATE_OVERLAYS)
 	human.update_transform()
 
-/datum/species/human/shifter/bestial/update_species_heights(mob/living/carbon/human/holder)
-	if(HAS_TRAIT(holder, TRAIT_DWARF))
-		return HUMAN_HEIGHT_MEDIUM
-
-	if(HAS_TRAIT(holder, TRAIT_TOO_TALL))
-		return HUMAN_HEIGHT_TALLEST
-
-	return HUMAN_HEIGHT_TALL
-
 /datum/species/human/shifter/bestial/proc/add_fluff(datum/source, list/overlay_list)
 	SIGNAL_HANDLER
 
