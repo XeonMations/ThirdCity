@@ -7,7 +7,7 @@
 	config_tag = "CAPO"
 	outfit = /datum/outfit/job/vampire/capo
 	job_flags = CITY_JOB_FLAGS
-	display_order = JOB_DISPLAY_ORDER_GIOVANNI
+	display_order = 1
 	exp_required_type_department = EXP_TYPE_GIOVANNI
 	departments_list = list(
 		/datum/job_department/giovanni,
