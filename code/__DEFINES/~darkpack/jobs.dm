@@ -256,7 +256,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define SUPERVISOR_SOCIETY_OF_LEOPOLD "the Society of Leopold, the Inquisition, the local Provincial, and God"
 
 // Playtime tracking system, see jobs_exp.dm
-#warn weird one.
+// weird one.
 #define EXP_TYPE_KINDRED "Kindred"
 #define EXP_TYPE_GAIA "Garou Nation"
 #define EXP_TYPE_SPIRAL "Pentex"
@@ -269,7 +269,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define EXP_TYPE_POLICE "Police Force"
 #define EXP_TYPE_NATIONAL_SECURITY "National Security"
 #define EXP_TYPE_SERVICES "City Services"
-#warn this prob should just say clinic genericly.
+// this prob should just say clinic genericly.
 #define EXP_TYPE_CLINIC "St. John's Clinic"
 #define EXP_TYPE_GIOVANNI "Giovanni Family"
 #define EXP_TYPE_MANOR "Tzimisce Manor"
