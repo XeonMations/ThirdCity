@@ -139,3 +139,6 @@
 2026-07-23:
   Art-gif-dotcom:
   - bugfix: fixed klaives not working properly
+2026-07-24:
+  TheCarnalest:
+  - qol: You can now use keybinds to select and cast Disciplines
