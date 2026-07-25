@@ -3,19 +3,18 @@
 	faction = FACTION_CITY
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = SUPERVISOR_TRADITIONS
+	supervisors = "your cab service"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/taxi
 	config_tag = "TAXI_DRIVER"
 	display_order = JOB_DISPLAY_ORDER_TAXI
 	exp_required_type_department = EXP_TYPE_SERVICES
-	department_for_prefs = /datum/job_department/city_services
 	departments_list = list(
 		/datum/job_department/city_services,
 	)
 
 	description = "Drive people in the city."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/taxi
 	name = "Taxi Driver"

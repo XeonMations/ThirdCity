@@ -15,6 +15,16 @@
 	subsplat_keys = /obj/item/vamp/keys/malkav
 	var/list/mob/living/madness_network
 
+/datum/subsplat/vampire_clan/malkavian/dominate
+	name = "Dominate Malkavian"
+	id = VAMPIRE_CLAN_DOMINATE_MALKAVIAN
+	icon = "dominate_malkavian"
+	clan_disciplines = list(
+		/datum/discipline/auspex,
+		/datum/discipline/dominate,
+		/datum/discipline/obfuscate
+	)
+
 /datum/subsplat/vampire_clan/malkavian/on_gain(mob/living/carbon/human/gaining_mob, datum/splat/gaining_splat, joining_round)
 	. = ..()
 
@@ -102,7 +112,7 @@
 		//before we inadvertently obfuscate the message to pass filters, filter it first.
 		//as funny as malkavians saying "amogus" would be, the filter also includes slurs... how unfortunate.
 		to_chat(clicker, span_warning("That message contained a word prohibited in IC chat! Consider reviewing the server rules.\n<span replaceRegex='show_filtered_ic_chat'>\"[mad_speak]\"</span>"))
-		SSblackbox.record_feedback("tally", "ic_blocked_words", 1, lowertext(config.ic_filter_regex.match))
+		SSblackbox.record_feedback("tally", "ic_blocked_words", 1, LOWER_TEXT(config.ic_filter_regex.match))
 		return
 	if(!mad_speak)
 		return
