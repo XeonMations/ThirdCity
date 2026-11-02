@@ -1,6 +1,11 @@
 /datum/discipline/protean
 	name = "Protean"
-	desc = "Lets your beast out, making you stronger and faster. Violates Masquerade."
+	desc = {"Lets your beast out, making you stronger and faster. Violates Masquerade.
+● Eyes of the Beast: Passive
+●● Feral Claws: Passive
+●●● Earth Meld: Passive
+●●●● Shape of the Beast: Passive
+●●●●● Mist Form: Passive"}
 	icon_state = "protean"
 	clan_restricted = TRUE
 	power_type = /datum/discipline_power/protean
@@ -186,8 +191,8 @@
 
 /datum/discipline_power/protean/shape_of_the_beast/deactivate()
 	UnregisterSignal(owner, COMSIG_LIVING_RETURNED_FROM_SHAPESHIFT)
-	. = ..()
 	gangy_form.Remove(owner)
+	. = ..()
 	QDEL_NULL(gangy_form)
 	owner.Stun(1 TURNS)
 	owner.do_jitter_animation(15)

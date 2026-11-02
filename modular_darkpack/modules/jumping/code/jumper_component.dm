@@ -38,7 +38,7 @@
 	if(LAZYACCESS(modifiers, CTRL_CLICK) || LAZYACCESS(modifiers, SHIFT_CLICK) || LAZYACCESS(modifiers, ALT_CLICK))
 		return
 
-	if(jumper.stat >= UNCONSCIOUS)
+	if(IS_UNCONSCIOUS_OR_CRIT(jumper))
 		return
 
 	if(jumper.pulledby && jumper.pulledby.grab_state != GRAB_PASSIVE)
@@ -107,6 +107,11 @@
 			return
 
 	var/adjusted_jump_range = clamp((BASE_JUMP_DISTANCE + 0.75 + max(0,(strength -1)) * 0.5 + athletics), 1, 6)
+
+	// WEREWOLF
+	var/datum/status_effect/hares_leap/hares_leap = jumper.has_status_effect(/datum/status_effect/hares_leap)
+	if(hares_leap)
+		adjusted_jump_range *= hares_leap.jump_modifier
 
 	var/distance = get_dist(jumper.loc, target)
 	var/turf/adjusted_target = target

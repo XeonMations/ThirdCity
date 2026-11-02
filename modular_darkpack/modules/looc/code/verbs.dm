@@ -1,9 +1,11 @@
 #define LOOC_RANGE 7
 
-GAME_VERB_DESC(/client, looc, "LOOC", "Local OOC, seen only by those in view.", "OOC", msg as text)
+GAME_VERB_DESC(/client, looc, "LOOC", "Local OOC, seen only by those in view.", "OOC")
+	VERB_ARG(msg, VERB_ARG_TYPE_TEXT, VERB_ARG_SOURCE_INPUT)
 	DEFAULT_QUEUE_OR_CALL_VERB(VERB_CALLBACK(src, PROC_REF(looc_message), msg))
 
-GAME_VERB_DESC(/client, looc_wallpierce, "LOOC (Wallpierce)", "Local OOC, seen by anyone within 7 tiles of you.", "OOC" , msg as text)
+GAME_VERB_DESC(/client, looc_wallpierce, "LOOC (Wallpierce)", "Local OOC, seen by anyone within 7 tiles of you.", "OOC")
+	VERB_ARG(msg, VERB_ARG_TYPE_TEXT, VERB_ARG_SOURCE_INPUT)
 	DEFAULT_QUEUE_OR_CALL_VERB(VERB_CALLBACK(src, PROC_REF(looc_message), msg, TRUE))
 
 /client/proc/looc_message(msg, wall_pierce)
@@ -78,8 +80,8 @@ GAME_VERB_DESC(/client, looc_wallpierce, "LOOC (Wallpierce)", "Local OOC, seen b
 
 	for(var/client/admin_client in GLOB.admins)
 		if(admin_seen[admin_client])
-			to_chat(admin_client, span_looc("[ADMIN_FLW(usr)] <span class='prefix'>LOOC[wall_pierce ? " (WALL PIERCE)" : ""]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span>"))
+			to_chat(admin_client, span_looc("[ADMIN_FLW(usr)] [span_prefix("LOOC[wall_pierce ? " (WALL PIERCE)" : ""]:")] <EM>[src.key]/[src.mob.name]:</EM> [span_message("[msg]")]"))
 		else if(admin_client.prefs.read_preference(/datum/preference/toggle/see_looc))
-			to_chat(admin_client, span_rlooc("[ADMIN_FLW(usr)] <span class='prefix'>(R)LOOC[wall_pierce ? " (WALL PIERCE)" : ""]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span>"))
+			to_chat(admin_client, span_rlooc("[ADMIN_FLW(usr)] [span_prefix("(R)LOOC[wall_pierce ? " (WALL PIERCE)" : ""]:")] <EM>[src.key]/[src.mob.name]:</EM> [span_message("[msg]")]"))
 
 #undef LOOC_RANGE

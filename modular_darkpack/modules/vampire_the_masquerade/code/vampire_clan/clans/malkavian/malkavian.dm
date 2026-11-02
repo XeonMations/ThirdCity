@@ -1,43 +1,45 @@
+GLOBAL_LIST_EMPTY(madness_network)
+
 /datum/subsplat/vampire_clan/malkavian
 	name = "Malkavian"
 	id = VAMPIRE_CLAN_MALKAVIAN
-	desc = "Derided as Lunatics by other vampires, the Blood of the Malkavians lets them perceive and foretell truths hidden from others. Like the �wise madmen� of poetry their fractured perspective stems from seeing too much of the world at once, from understanding too deeply, and feeling emotions that are just too strong to bear."
+	desc = "Derided as Lunatics by other vampires, the Blood of the Malkavians lets them perceive and foretell truths hidden from others. Like the wise madmen of poetry their fractured perspective stems from seeing too much of the world at once, from understanding too deeply, and feeling emotions that are just too strong to bear. The Malkavians are cursed with supernatural madness that grants disturbing insights, visions and premonitions. They are largely loyal to the Camarilla, equally serving as seers, manipulators, prophets, and fools. Since the undoing of the Great Prank, Dementation has returned to the clan, though some still mysteriously retain Dominate instead (See: Dominate Malkavian). Every Malkavian suffers from a unique derangement that shapes how they experience the world."
 	icon = "malkavian"
 	curse = "Insanity."
+	roleplay_level = "Advanced"
 	sense_the_sin_text = "frightens people near them."
 	clan_disciplines = list(
 		/datum/discipline/auspex,
 		/datum/discipline/dementation,
-		/datum/discipline/obfuscate
+		/datum/discipline/obfuscate,
 	)
 	male_clothes = /obj/item/clothing/under/vampire/malkavian
 	female_clothes = /obj/item/clothing/under/vampire/malkavian/female
 	subsplat_keys = /obj/item/vamp/keys/malkav
-	var/list/mob/living/madness_network
 
 /datum/subsplat/vampire_clan/malkavian/dominate
 	name = "Dominate Malkavian"
 	id = VAMPIRE_CLAN_DOMINATE_MALKAVIAN
 	icon = "dominate_malkavian"
+	roleplay_level = "Beginner Friendly"
 	clan_disciplines = list(
 		/datum/discipline/auspex,
 		/datum/discipline/dominate,
-		/datum/discipline/obfuscate
+		/datum/discipline/obfuscate,
 	)
 
 /datum/subsplat/vampire_clan/malkavian/on_gain(mob/living/carbon/human/gaining_mob, datum/splat/gaining_splat, joining_round)
 	. = ..()
-
 	var/datum/action/cooldown/malk_hivemind/hivemind = new(gaining_mob)
-	var/datum/action/cooldown/malk_speech/malk_font = new(gaining_mob)
 	hivemind.Grant(gaining_mob)
+	var/datum/action/cooldown/malk_speech/malk_font = new(gaining_mob)
 	malk_font.Grant(gaining_mob)
+
 	gaining_mob.add_quirk(/datum/quirk/darkpack/derangement)
 
-	// Madness Network handling
-	LAZYADD(madness_network, gaining_mob)
-	RegisterSignal(gaining_mob, COMSIG_MOB_SAY, PROC_REF(handle_say), override = TRUE)
-	RegisterSignal(gaining_mob, COMSIG_MOVABLE_HEAR, PROC_REF(handle_hear), override = TRUE)
+	GLOB.madness_network += gaining_mob
+	RegisterSignal(gaining_mob, COMSIG_MOB_SAY, PROC_REF(handle_say))
+	RegisterSignal(gaining_mob, COMSIG_MOVABLE_HEAR, PROC_REF(handle_hear))
 
 /datum/subsplat/vampire_clan/malkavian/on_lose(mob/living/carbon/human/losing_mob)
 	. = ..()
@@ -47,8 +49,9 @@
 			continue
 		malkavian_action.Remove(losing_mob)
 
-	// Remove Madness Network
-	LAZYREMOVE(madness_network, losing_mob)
+	losing_mob.remove_quirk(/datum/quirk/darkpack/derangement)
+
+	GLOB.madness_network -= losing_mob
 	UnregisterSignal(losing_mob, COMSIG_MOB_SAY)
 	UnregisterSignal(losing_mob, COMSIG_MOVABLE_HEAR)
 
@@ -69,7 +72,7 @@
 	say_in_madness_network(hearing_args[HEARING_RAW_MESSAGE])
 
 /datum/subsplat/vampire_clan/malkavian/proc/say_in_madness_network(message)
-	for (var/mob/living/malkavian in madness_network)
+	for (var/mob/living/malkavian in GLOB.madness_network)
 		to_chat(malkavian, span_ghostalert(message))
 
 /datum/action/cooldown/malk_hivemind
